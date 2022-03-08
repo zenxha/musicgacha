@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{base/layout}" lang="en">
+<head>
+    <div layout:fragment="metadata" th:remove="tag">
+        <!-- Start of head content specific to page -->
+        <title>Credit Administration Game</title>
+        <style>
+            body {
+                background-image: url('http://localhost:8080/images/background.png');
+            }
+        </style>
+    </div>
+</head>
+<body>
+<div layout:fragment="content" th:remove="tag">
+
+    <table class="table">
+        <tbody>
+        <tr >
+            <td style="width:300px;">
+                <img src="https://files.catbox.moe/uwjohn.png" width=100 height="Auto">
+            </td>
+            <td style="text-align:left; vertical-align: middle;">
+                <p style="color:white;font-size:30px; " >National Social Credit Administration Game</p>
+            </td>
+
+        </tr>
+        <tr >
+            <td>
+                <img src="https://files.catbox.moe/ykzu8o.png" width=100 height="Auto">
+            </td>
+            <td>
+                <p><a>Name: </a><a style="color:white;" th:text="${name}">0</a></p>
+                <p><a>Age: </a><a style="color:white;" th:text="${age}">0</a></p>
+                <p><a>Score: </a><a style="color:white;" th:text="${score}">0</a></p>
+            </td>
+        </tr>
+        <tr><td>Social Profile</td></tr>
+        <tr>
+            <td>
+                <p><a>Phone number: </a><a style="color:white;" th:text="${phone_number}">0</a></p>
+                <p><a>Internet speed: </a><a style="color:white;" th:text="${internet_speed}">0</a></p>
+                <p><a>Can travel internationally: </a><a style="color:white;" th:text="${right_to_travel_outside_country}">0</a></p>
+                <p><a>Can travel at business class: </a><a style="color:white;" th:text="${can_use_business_class}">0</a></p>
+                <p><a>Highest hotel class: </a><a style="color:white;" th:text="${highest_hotel_class}">0</a></p>
+                <p><a>Can attend top colleges: </a><a style="color:white;" th:text="${can_attend_top_college}">0</a></p>
+                <p><a>Can receive financial aid: </a><a style="color:white;" th:text="${can_receive_financial_aid}">0</a></p>
+                <p><a>Free Covid-19 masks: </a><a style="color:white;" th:text="${free_covid_masks}">0</a></p>
+                <p><a>Weeks of vacation: </a><a style="color:white;" th:text="${weeks_of_vacation}">0</a></p>
+                <p><a>Can go to movies: </a><a style="color:white;" th:text="${can_go_to_movies}">0</a></p>
+            </td>
+            <td>
+                <form action="/game" method="GET" id="goforit">
+                    <button>I'm feeling lucky!</button>
+                </form>
+                <a>[</a><a th:text="${current_question_id}"></a><a>]</a> <a style="font-size:20px;" th:text="${current_question}"></a>
+                <p th:text="${current_question_in_chinese}"></p>
+                <p><img th:src="${user_image}" width=300 height="Auto"></p>
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>

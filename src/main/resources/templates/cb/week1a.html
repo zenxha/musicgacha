@@ -1,0 +1,56 @@
+
+<!-- This page is illustrative and contains ideas about HTML formatting -->
+<!DOCTYPE HTML>
+<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{base/layout}" lang="en">
+
+<head><div layout:fragment="metadata" th:remove="tag">
+    <title>Week 1</title>
+</div></head>
+
+<!-- layout::fragment="content" is heart of ThymeLeaf layout -->
+<body><div layout:fragment="content" th:remove="tag">
+    <!-- Start of body content specific to page -->
+<div class="container">
+    <div class="jumbotron text-center row">
+        <div class="col-md-6">
+            <h3>Run the FRQ Program!</h3>
+            <img class="img-responsive py-3" src="#" th:src="@{/images/fibonacci_spiral.svg}" alt="" width="50%" height="Auto">
+            <form id="fibForm" th:action="@{/cb/1}" method="GET" >
+                <button>Run!</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <h3>FRQ Week 1</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Gist Link</th>
+                        <th scope="col">Output</th>
+                    </tr>
+                </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td><a></a></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+</div>
+
+    <!-- End of body content specific to page -->
+<script th:inline="javascript">
+    const week = [[${frqList}]]
+    console.log("adas")
+    console.log(week)
+</script>
+</div></body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
+<html xmlns:layout="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{base/layout}" lang="en">
+
+<!-- <head> -->
+<div layout:fragment="metadata" th:remove="tag">
+    <!-- Page specific head additions -->
+    <title>Sort Lab</title>
+</div>
+
+<!-- <body> -->
+<div layout:fragment="content" th:remove="tag">
+    <!-- Page specific body additions -->
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Sorting Minilab!</h1>
+            <p class="lead">Create random passwords with customizable features!</p>
+            <hr class="my-4">
+            <form th:action="@{/cb/sort}" method="GET" id="sortForm">
+                <div>
+                    <div>
+                        <p>Integer List</p>
+                        <input required type="text" name="array" id="array">
+                    </div>
+                    <div>
+                        <select class="form-select" aria-label="Default select example" name="selection">
+                            <option selected>Pick a sort!</option>
+                            <option value="selectsort" name="selectsort">Selection Sort</option>
+                            <option value="insertsort" name="insertsort">Insertion Sort</option>
+                            <option value="mergesort" name="mergesort">Merge Sort</option>
+                        </select>
+                        <button class="btn btn-primary btn-lg">Sort!</button>
+                    </div>
+                    <p th:text="'Here is the sorted list: ' + ${intlist}"></p>
+                    <p th:text="'Time Elapsed: ' + ${time} + ' nanoseconds'"></p>
+
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+</div>

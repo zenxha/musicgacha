@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{base/layout}" lang="en">
+
+<head><div layout:fragment="metadata" th:remove="tag">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" th:href="@{/css/button.css}">
+    <meta charset="UTF-8">
+    <title>About Allen</title>
+
+    <script>
+        function generate() {
+            $.ajax({
+                url: "https://inspirobot.me/api?generate=true",
+                type: 'GET',
+                dataType: 'text', // added data type
+                success: function(res) {
+                    console.log(res);
+                    document.getElementById("quote").src=res;
+                }
+            });
+        }
+        let togglee = false;
+        const maskoff = "https://files.catbox.moe/6qjs2n.png"
+        const maskon = "https://files.catbox.moe/zn4y9e.png"
+        const toggleMask = () => {
+            let card = document.getElementById("mask")
+            if(togglee === true) {
+                card.src= maskoff
+            } else {
+                card.src = maskon;
+            }
+            console.log(card.src)
+            togglee = !togglee
+        }
+        const jitter = () => {
+            setInterval(toggleMask,50)
+        }
+
+    </script>
+</div></head>
+
+<body><div layout:fragment="content" th:remove="tag">
+    <div class="container">
+        <div class="modal fade" id="week2" tabindex="-1" aria-labelledby="week2label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="week2label">Unit 3 FRQ</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <script src="https://gist.github.com/zenxha/81036ea1506a58bdd71e3b7341986784.js"></script>
+                        <h5>Select RSVP option and input a number to select a meal!</h5>
+                        <form th:action="@{/cb/unit3}" method="GET" id="rsvpForm">
+                            <div>
+                                <p><b>RSVP</b></p>
+                                <label for="rsvp">RSVP?</label>
+                                <select name="rsvp" id="rsvp">
+                                    <option value="true">Yes</option>
+                                    <option value="false">No</option>
+                                </select>
+                            </div>
+                            <div>
+                                <p><b>Order food</b></p>
+                                <label for="value">Order?</label>
+                                <input type = number name="value" id="value">
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" form="rsvpForm">Order</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="units" style="margin-top: 40px;">
+            <div class="jumbotron" style="background-image: linear-gradient(to bottom, rgba(103, 135, 211, .6), rgba(144, 25, 166, .6)), url('https://i.redd.it/lpq6o2autx761.jpg'); background-position: center">
+                <div class="row">
+                    <div class="col-3">
+                        <img onclick="jitter()" class="rounded-circle" height="150" src="https://files.catbox.moe/6qjs2n.png " id="mask" alt="Card image cap">
+                    </div>
+                    <div class="col-6">
+                        <btn id="runbtn" onclick="toggleMask()"class="btn-grad">Toggle Mask</btn>
+                        <h3>
+                            <a href="/cb" style="color:white">My FRQs</a>
+                        </h3>
+                        <h3>
+                            <a href="https://docs.google.com/document/d/1jmRSbsEmWEwsjZqkAjQnIliiSyZJDKA-KC60NFxaLUU/edit?usp=sharing" style="color:white">My Journal</a>
+                        </h3>
+                        <h3>
+                            <a href="https://github.com/zenxha/m22-2-social-credit-farmers/projects/1?card_filter_query=assignee%3Apurplebears321" style="color:white">My Tickets</a>
+                        </h3>
+                        <h3>
+                            <a href="https://github.com/zenxha/m22-2-social-credit-farmers/commits?author=purplebears321" style="color:white">My Commits</a>
+                        </h3>
+                        <h3>
+                            <a href="https://github.com/purplebears321" style="color:white">My Github Profile</a>
+                        </h3>
+                    </div>
+                    <div class="col-3">
+                        <img class="image" width="300" id="quote" src="https://generated.inspirobot.me/a/5keGo7V8eA.jpg">
+                        <h3>
+                            <a class="btn btn-primary btn-lg" role="button" onClick="generate()" style="color:white">Quote</a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</div></body>
+</html>

@@ -1,0 +1,23 @@
+
+<!-- This page is illustrative and contains ideas about HTML formatting -->
+<!DOCTYPE HTML>
+<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{base/layout}" lang="en">
+
+<head><div layout:fragment="metadata" th:remove="tag">
+    <title>Searching</title>
+</div></head>
+
+<!-- layout::fragment="content" is heart of ThymeLeaf layout -->
+<body><div layout:fragment="content" th:remove="tag">
+    <!-- Start of body content specific to page -->
+        <p th:text="${query}"></p>
+</div>
+<style>
+
+</style>
+<!-- End of body content specific to page -->
+</div></body>
+
+</html>
