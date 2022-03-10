@@ -1,8 +1,8 @@
-package com.social_credit_farming.data.SQL;
+package com.musicgacha.data.SQL;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-
+import com.social_credit_farming.data.SQL.Score;
 import java.util.List;
 
 /*

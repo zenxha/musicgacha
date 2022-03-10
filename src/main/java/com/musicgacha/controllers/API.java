@@ -1,6 +1,6 @@
-package com.social_credit_farming.controllers;
+package com.musicgacha.controllers;
 import com.social_credit_farming.data.SQL.Score;
-import com.social_credit_farming.data.SQL.ScoreSqlRepository;
+import com.musicgacha.data.SQL.ScoreSqlRepository;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -54,7 +54,7 @@ public class API {
     {
         Score score = new Score(username, Long.parseLong(newscore));
         System.out.println("New score update\n"+ "Username: "+score.getUsername()+"\nPoints: "+score.getScore());
-        repository.save(score);
+        //repository.save(score);
 //        return new ResponseEntity<String>("{\"username\": "+"\""+username+"\","+ "oldScore\": \"0\",\"newScore\":"+newscore+"\""+" }", HttpStatus.OK);
         return new ResponseEntity<Score>(score, HttpStatus.OK);
     }

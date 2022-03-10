@@ -1,4 +1,4 @@
-package com.social_credit_farming.controllers;
+package com.musicgacha.controllers;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;

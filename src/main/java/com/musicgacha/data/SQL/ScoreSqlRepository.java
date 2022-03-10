@@ -1,9 +1,9 @@
-package com.social_credit_farming.data.SQL;
+package com.musicgacha.data.SQL;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
+import com.social_credit_farming.data.SQL.Score;
 import java.util.List;
 
 /*

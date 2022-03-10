@@ -1,4 +1,4 @@
-package com.social_credit_farming.controllers.weeklyFRQs;
+package com.musicgacha.controllers.weeklyFRQs;
 
 import org.apache.commons.lang3.RandomStringUtils;
 

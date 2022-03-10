@@ -1,4 +1,4 @@
-package com.social_credit_farming.controllers.weeklyFRQs;
+package com.musicgacha.controllers.weeklyFRQs;
 
 import org.apache.catalina.User;
 import org.springframework.stereotype.Controller;
