@@ -29,7 +29,14 @@ public class PBLControl {
         return "homesite/quiz"; // returns HTML VIEW (greeting)
 
     }
+    @GetMapping("/open")
+    // CONTROLLER handles GET request for /greeting, maps it to greeting() and does variable bindings
+    public String open(Model model) {
+        // @RequestParam handles required and default values, name and model are class variables, model looking like JSON
+        model.addAttribute("name", "cock"); // MODEL is passed to html
+        return "homesite/open"; // returns HTML VIEW (greeting)
 
+    }
     @GetMapping("/imagemathgame")
     // CONTROLLER handles GET request for /greeting, maps it to greeting() and does variable bindings
     public String imagemathgame() {
