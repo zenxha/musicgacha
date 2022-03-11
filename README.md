@@ -10,37 +10,37 @@
     
   <tr>
     <td>Komay</td>
-    <td>[@zenxha](https://github.com/zenxha)</td>
-    <td>[Commits](https://github.com/zenxha/musicgacha/commits?author=zenxha)</td>
-    <td>[Tasks](https://github.com/zenxha/musicgacha/issues/assigned/zenxha)</td>
+    <td><a href="https://github.com/zenxha">@zenxha</a></td>
+    <td><a href="https://github.com/zenxha/musicgacha/commits?author=zenxha">Commits</a></td>
+    <td><a href="https://github.com/zenxha/musicgacha/issues/assigned/zenxha">Tasks</a></td>
   </tr>
   
   <tr>
     <td>Caleb</td>
-    <td>[@calebkimsd](https://github.com/calebkimsd)</td>
-    <td>[Commits](https://github.com/zenxha/musicgacha/commits?author=calebkimsd)</td>
-    <td>[Tasks](https://github.com/zenxha/musicgacha/issues/assigned/calebkimsd)</td>
+    <td><a href="https://github.com/calebkimsd">@calebkimsd</a></td>
+    <td><a href="https://github.com/zenxha/musicgacha/commits?author=calebkimsd">Commits</a></td>
+    <td><a href="https://github.com/zenxha/musicgacha/issues/assigned/calebkimsd">Tasks</a>)</td>
   </tr>
   
   <tr>
     <td>Allen</td>
-    <td>[@purplebears321](https://github.com/purplebears321)</td>
-    <td>[Commits](https://github.com/zenxha/musicgacha/commits?author=purplebears321)</td>
-    <td>[Tasks](https://github.com/zenxha/musicgacha/issues/assigned/purplebears321)</td>
+    <td><a href="https://github.com/purplebears321">@purplebears321</a></td>
+    <td><a href="https://github.com/zenxha/musicgacha/commits?author=purplebears321">Commits</a></td>
+    <td><a href="https://github.com/zenxha/musicgacha/issues/assigned/purplebears321">Tasks</a></td>
   </tr>
   
   <tr>
     <td>Sam</td>
-    <td>[@samkoenig9](https://github.com/samkoenig9)</td>
-    <td>[Commits](https://github.com/zenxha/musicgacha/commits?author=samkoenig9)</td>
-    <td>[Tasks](https://github.com/zenxha/musicgacha/issues/assigned/samkoenig9)</td>
+    <td><a href="https://github.com/samkoenig9">@samkoenig9</a></td>
+    <td><a href="https://github.com/zenxha/musicgacha/commits?author=samkoenig9">Commits</a></td>
+    <td><a href="https://github.com/zenxha/musicgacha/issues/assigned/samkoenig9">Tasks</a></td>
   </tr>
   
   <tr>
     <td>Chris</td>
-    <td>[@Chris-Ru](https://github.com/Chris-Ru)</td>
-    <td>[Commits](https://github.com/zenxha/musicgacha/commits?author=Chris-Ru)</td>
-    <td>[Tasks](https://github.com/zenxha/musicgacha/issues/assigned/Chris-Ru)</td>
+    <td><a href="https://github.com/Chris-Ru">@Chris-Ru</a></td>
+    <td><a href="https://github.com/zenxha/musicgacha/commits?author=Chris-Ru">Commits</a></td>
+    <td><a href="https://github.com/zenxha/musicgacha/issues/assigned/Chris-Ru">Tasks</a></td>
   </tr>
 </table>
 
