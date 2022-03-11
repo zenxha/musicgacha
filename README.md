@@ -7,46 +7,41 @@
     <th> Individual Commits </th>
     <th> Current Scrum Board Tasks </th>
   </tr>
-
+    
   <tr>
     <td>Komay</td>
-    <td>Caleb</td>
-    <td>Allen</td>
-    <td>Sam</td>
-    <td>Chris</td>
-  </tr>
-  
-  <tr>
     <td>[@zenxha](https://github.com/zenxha)</td>
-    <td>[@calebkimsd](https://github.com/calebkimsd)</td>
-    <td>[@purplebears321](https://github.com/purplebears321)</td>
-    <td>[@samkoenig9](https://github.com/samkoenig9)</td>
-    <td>[@Chris-Ru](https://github.com/Chris-Ru)</td>
-  </tr>
-  
-   <tr>
     <td>[Commits](https://github.com/zenxha/musicgacha/commits?author=zenxha)</td>
+    <td>[Tasks](https://github.com/zenxha/musicgacha/issues/assigned/zenxha)</td>
+  </tr>
+  
+  <tr>
+    <td>Caleb</td>
+    <td>[@calebkimsd](https://github.com/calebkimsd)</td>
     <td>[Commits](https://github.com/zenxha/musicgacha/commits?author=calebkimsd)</td>
+    <td>[Tasks](https://github.com/zenxha/musicgacha/issues/assigned/calebkimsd)</td>
+  </tr>
+  
+  <tr>
+    <td>Allen</td>
+    <td>[@purplebears321](https://github.com/purplebears321)</td>
     <td>[Commits](https://github.com/zenxha/musicgacha/commits?author=purplebears321)</td>
+    <td>[Tasks](https://github.com/zenxha/musicgacha/issues/assigned/purplebears321)</td>
+  </tr>
+  
+  <tr>
+    <td>Sam</td>
+    <td>[@samkoenig9](https://github.com/samkoenig9)</td>
     <td>[Commits](https://github.com/zenxha/musicgacha/commits?author=samkoenig9)</td>
+    <td>[Tasks](https://github.com/zenxha/musicgacha/issues/assigned/samkoenig9)</td>
+  </tr>
+  
+  <tr>
+    <td>Chris</td>
+    <td>[@Chris-Ru](https://github.com/Chris-Ru)</td>
     <td>[Commits](https://github.com/zenxha/musicgacha/commits?author=Chris-Ru)</td>
-  </tr>
-  
-  <tr>
-    <td>[Tasks](https://github.com/zenxha/musicgacha/issues/assigned/zenxha)</td>
-    <td>[Tasks](https://github.com/zenxha/musicgacha/issues/assigned/calebkimsd)</td>
-    <td>[Tasks](https://github.com/zenxha/musicgacha/issues/assigned/purplebears321)</td>
-    <td>[Tasks](https://github.com/zenxha/musicgacha/issues/assigned/samkoenig9)</td>
     <td>[Tasks](https://github.com/zenxha/musicgacha/issues/assigned/Chris-Ru)</td>
-  </tr>
-  
-  <tr>
-    <td>[Tasks](https://github.com/zenxha/musicgacha/issues/assigned/zenxha)</td>
-    <td>[Tasks](https://github.com/zenxha/musicgacha/issues/assigned/calebkimsd)</td>
-    <td>[Tasks](https://github.com/zenxha/musicgacha/issues/assigned/purplebears321)</td>
-    <td>[Tasks](https://github.com/zenxha/musicgacha/issues/assigned/samkoenig9)</td>
-    <td>[Tasks](https://github.com/zenxha/musicgacha/issues/assigned/Chris-Ru)</td>
-  </tr>
+
 </table>
 
 
