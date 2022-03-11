@@ -19,7 +19,7 @@
     <td>Caleb</td>
     <td><a href="https://github.com/calebkimsd">@calebkimsd</a></td>
     <td><a href="https://github.com/zenxha/musicgacha/commits?author=calebkimsd">Commits</a></td>
-    <td><a href="https://github.com/zenxha/musicgacha/issues/assigned/calebkimsd">Tasks</a>)</td>
+    <td><a href="https://github.com/zenxha/musicgacha/issues/assigned/calebkimsd">Tasks</a></td>
   </tr>
   
   <tr>
