@@ -1,4 +1,4 @@
-package com.social_credit_farming.Lights;
+package com.musicgacha.Lights;
 
 public class Lights {
     private static final int BOARD_ROWS = 5;

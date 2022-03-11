@@ -1,7 +1,7 @@
-//package com.social_credit_farming.data;
+//package com.musicgacha.data;
 //
 //
-//import com.social_credit_farming.data.SQL.*;
+//import com.musicgacha.data.SQL.*;
 //import org.json.simple.JSONObject;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.http.*;

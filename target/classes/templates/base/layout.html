@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <div th:replace="fragments/head :: header"></div>
+    <div layout:fragment="metadata"></div>
+</head>
+
+<body>
+    <div th:replace="fragments/nav :: header"></div>
+
+    <div layout:fragment="content"></div>
+  <!--  <div th:replace="fragments/footer :: footer"></div> -->
+
+</body>
+
+<div layout:fragment="script"></div>
+<style>
+    html, body {
+        background: #3494E6;  /* fallback for old browsers *!*/
+        background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+    }
+</style>
+
+</html>

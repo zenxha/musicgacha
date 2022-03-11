@@ -1,4 +1,4 @@
-package com.social_credit_farming.mvc.DataOps.LinkedLists;
+package com.musicgacha.mvc.DataOps.LinkedLists;
 
 /**
  *  Implementation of a Linked List with an Object reference as database;  forward and backward links point to adjacent Nodes.

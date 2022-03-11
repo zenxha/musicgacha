@@ -1,11 +1,11 @@
-package com.social_credit_farming.mvc.DataOps;
+package com.musicgacha.mvc.DataOps;
 
-import com.social_credit_farming.utility.ConsoleMethods;
-import com.social_credit_farming.mvc.DataOps.genericDataModel.Alphabet;
-import com.social_credit_farming.mvc.DataOps.genericDataModel.Player;
-import com.social_credit_farming.mvc.DataOps.genericDataModel.Leaders;
+import com.musicgacha.utility.ConsoleMethods;
+import com.musicgacha.mvc.DataOps.genericDataModel.Alphabet;
+import com.musicgacha.mvc.DataOps.genericDataModel.Player;
+import com.musicgacha.mvc.DataOps.genericDataModel.Leaders;
 
-import com.social_credit_farming.mvc.DataOps.LinkedLists.CircleQueue;
+import com.musicgacha.mvc.DataOps.LinkedLists.CircleQueue;
 import lombok.Getter;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

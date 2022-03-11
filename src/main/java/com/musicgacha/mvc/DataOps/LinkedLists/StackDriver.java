@@ -1,9 +1,9 @@
-package com.social_credit_farming.mvc.DataOps.LinkedLists;
+package com.musicgacha.mvc.DataOps.LinkedLists;
 
-import com.social_credit_farming.utility.ConsoleMethods;
-import com.social_credit_farming.mvc.DataOps.genericDataModel.Alphabet;
-import com.social_credit_farming.mvc.DataOps.genericDataModel.Player;
-import com.social_credit_farming.mvc.DataOps.genericDataModel.Leaders;
+import com.musicgacha.utility.ConsoleMethods;
+import com.musicgacha.mvc.DataOps.genericDataModel.Alphabet;
+import com.musicgacha.mvc.DataOps.genericDataModel.Player;
+import com.musicgacha.mvc.DataOps.genericDataModel.Leaders;
 
 
 /**

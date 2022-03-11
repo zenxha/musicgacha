@@ -1,9 +1,9 @@
-package com.social_credit_farming.controllers;
+package com.musicgacha.controllers;
 /* MVC code that shows defining a simple Model, calling View, and this file serving as Controller
  * Web Content with Spring MVCSpring Example: https://spring.io/guides/gs/serving-web-con
  */
 
-import com.social_credit_farming.data.Song;
+import com.musicgacha.data.Song;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;

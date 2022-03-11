@@ -1,4 +1,4 @@
-package com.social_credit_farming.data.SQL;
+package com.musicgacha.data.SQL;
 
 import org.hibernate.dialect.Dialect;
 import org.hibernate.dialect.function.SQLFunctionTemplate;

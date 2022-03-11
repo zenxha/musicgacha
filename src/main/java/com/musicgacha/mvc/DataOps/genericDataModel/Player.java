@@ -1,4 +1,4 @@
-package com.social_credit_farming.mvc.DataOps.genericDataModel;
+package com.musicgacha.mvc.DataOps.genericDataModel;
 
 
 /*

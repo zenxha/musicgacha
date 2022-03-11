@@ -1,11 +1,11 @@
-package com.social_credit_farming.controllers;
+package com.musicgacha.controllers;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import com.social_credit_farming.data.FRQ;
+import com.musicgacha.data.FRQ;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

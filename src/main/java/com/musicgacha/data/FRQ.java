@@ -1,4 +1,4 @@
-package com.social_credit_farming.data;
+package com.musicgacha.data;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,10 +1,10 @@
-package com.social_credit_farming.controllers;
-import com.social_credit_farming.data.Song;
+package com.musicgacha.controllers;
+import com.musicgacha.data.Song;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.springframework.stereotype.Controller;
-import com.social_credit_farming.data.Song;
+import com.musicgacha.data.Song;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 

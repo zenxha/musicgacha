@@ -1,6 +1,6 @@
-package com.social_credit_farming.mvc.DataOps.genericDataModel;
+package com.musicgacha.mvc.DataOps.genericDataModel;
 
-import com.social_credit_farming.utility.ConsoleMethods;
+import com.musicgacha.utility.ConsoleMethods;
 import lombok.Getter;
 import lombok.Setter;
 

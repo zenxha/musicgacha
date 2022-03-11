@@ -1,4 +1,4 @@
-package com.social_credit_farming.data.SQL;
+package com.musicgacha.data.SQL;
 
 
 import lombok.*;

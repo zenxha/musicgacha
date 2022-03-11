@@ -1,4 +1,4 @@
-package com.social_credit_farming.utility;
+package com.musicgacha.utility;
 
 public class ConsoleMethods {
 

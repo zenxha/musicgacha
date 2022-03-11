@@ -6,7 +6,7 @@ import org.json.simple.parser.ParseException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import com.social_credit_farming.data.Person;
+import com.musicgacha.data.Person;
 
 import java.io.FileReader;
 import java.io.IOException;
