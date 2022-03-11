@@ -41,7 +41,7 @@
     <td>[@Chris-Ru](https://github.com/Chris-Ru)</td>
     <td>[Commits](https://github.com/zenxha/musicgacha/commits?author=Chris-Ru)</td>
     <td>[Tasks](https://github.com/zenxha/musicgacha/issues/assigned/Chris-Ru)</td>
-
+  </tr>
 </table>
 
 
