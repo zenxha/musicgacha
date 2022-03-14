@@ -1,4 +1,4 @@
-## MusicGacha Project Page
+# MusicGacha Project Page
 
 kekekekeke
 kek
