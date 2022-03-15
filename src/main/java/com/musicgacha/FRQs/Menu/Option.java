@@ -1,7 +1,9 @@
 package com.musicgacha.FRQs.Menu;
 
-public class Option {
-    public static void run() {
-        System.out.println("pog");
-    }
+public interface Option {
+    public void run();
+    public String getTitle();
+
 }
+
+
