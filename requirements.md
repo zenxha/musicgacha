@@ -4,9 +4,9 @@
 - Wants a consistent thematic, gave us an suggestion of the [Kagerou Project](https://en.wikipedia.org/wiki/Kagerou_Project) theme, but allowed us to go alternative path
 - Wanted us to experiment with a [side bar navbar](https://bootstrapious.com/p/bootstrap-sidebar) rather than the traditional top screen navbar
 
-## Team Roles
-- Allen [Ticket]()
-- Caleb [Ticket]()
-- Chris [Ticket]()
-- Komay [Ticket]()
-- Sam [Ticket]()
+## Team Role Tasks
+- Allen [Ticket](https://github.com/zenxha/musicgacha/issues/17)
+- Caleb [Ticket](https://github.com/zenxha/musicgacha/projects/1#card-79281471)
+- Chris [Ticket](https://github.com/zenxha/musicgacha/projects/1#card-79281636)
+- Komay [Ticket](https://github.com/zenxha/musicgacha/projects/1#card-79281492)
+- Sam [Ticket](https://github.com/zenxha/musicgacha/projects/1#card-79282569)
