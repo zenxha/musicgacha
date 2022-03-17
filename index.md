@@ -1,3 +1,5 @@
+<div style="text-align: right"> <a href="https://zenxha.github.io/musicgacha/"> Music Gacha</a> <a href="https://zenxha.github.io/musicgacha/requirements> Requirements</a> </div>
+
 # MusicGacha Project Page
 
 ## Project Theme
