@@ -1,4 +1,6 @@
-<div style="text-align: right"> <a href="https://zenxha.github.io/musicgacha/">Home</a></div>
+<p align="right"><a href="https://zenxha.github.io/musicgacha/">Home</a></p>
+<p align="right"><a href="https://zenxha.github.io/musicgacha/requirements">Requirements</a></p>
+
 
 # MusicGacha Project Page
 
