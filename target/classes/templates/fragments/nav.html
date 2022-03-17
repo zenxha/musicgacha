@@ -8,8 +8,9 @@
 <!-- Begin navigation fragments -->
 <th:block xmlns:th="http://www.w3.org/1999/xhtml" th:fragment="header">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css"/>
+    <link rel="stylesheet" href="../../static/css/nav.css">
 
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="cnav navbar navbar-expand">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">SCF</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -55,17 +56,6 @@
                             <a class="dropdown-item" href="/about/roop">Roop</a>
                             <a class="dropdown-item" href="/about/nick">Nicholas</a>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a id="scorelabel" class="nav-link mr-auto">Social Credit Score: </a>
-                    </li>
-                    <div class="form-check form-switch">
-                        <button style=" background-color: #4CB8C4; color: white; text-transform: uppercase; border-radius: 60px; font-size: 15px;"type="button" onclick="darkFunction()">Change theme</button>
-                    </div>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item d-flex">
-                        <button class="btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" >Save</button>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
