@@ -2,7 +2,7 @@
 <p align="right"><a href="https://zenxha.github.io/musicgacha/requirements">Requirements</a></p>
 
 
-# MusicGacha Project Page
+# MusicGacha Project Home Page
 
 ## Project Theme
 
