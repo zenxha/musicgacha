@@ -30,6 +30,29 @@
                 </div>
             </div>
         </div>
+        <div id="overlay"></div>
+        <script type="text/javascript">
+            // Initialize Variables
+            var closePopup = document.getElementById("popupclose");
+            var overlay = document.getElementById("overlay");
+            var popup = document.getElementById("popup");
+            var button = document.getElementById("button");
+            // Close Popup Event
+            overlay.onclick = function() {
+                overlay.className = '';
+                popup.className = '';
+            };
+            // Close Popup Event
+            closePopup.onclick = function() {
+                overlay.className = '';
+                popup.className = '';
+            };
+            // Show Overlay and Popup
+            button.onclick = function() {
+                overlay.className = 'show';
+                popup.className = 'show';
+            }
+        </script>
     </div>
     <!-- End of body content specific to page -->
     <style>
@@ -283,6 +306,320 @@
                 -webkit-transform: translateX(-100%) rotate(0deg) skew(10deg, 10deg);
                 transform: translateX(-100%) rotate(0deg) skew(10deg, 10deg);
             }
+        }
+
+    </style>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            text-align: center;
+        }
+        body:before {
+            content: "";
+            visibility: hidden;
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+        }
+        #maincontent {
+            display: inline-block;;
+            vertical-align: middle;
+        }
+
+        #overlay {
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            bottom: 0;
+            background: #999;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            visibility: hidden;
+            transition: all 1s ease;
+        }
+        #popup {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background: #fff;
+            width: 500px;
+            height: 500px;
+            margin-left: -250px; /*Half the value of width to center div*/
+            margin-top: -250px; /*Half the value of height to center div*/
+            z-index: -1;
+            visibility: hidden;
+        }
+        #popupclose {
+            float: right;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .popupcontent {
+            padding: 10px;
+        }
+        #button {
+            cursor: pointer;
+        }
+        @-webkit-keyframes pop-swirl {
+            0% {
+                transform: scale(0) rotate(360deg);
+            }
+
+            60% {
+                transform: scale(0.8) rotate(-10deg);
+            }
+
+            100% {
+                transform: scale(1) rotate(0deg);
+            }
+        }
+        @-moz-keyframes pop-swirl {
+            0% {
+                transform: scale(0) rotate(360deg);
+            }
+
+            60% {
+                transform: scale(0.8) rotate(-10deg);
+            }
+
+            100% {
+                transform: scale(1) rotate(0deg);
+            }
+        }
+        @-ms-keyframes pop-swirl {
+            0% {
+                transform: scale(0) rotate(360deg);
+            }
+
+            60% {
+                transform: scale(0.8) rotate(-10deg);
+            }
+
+            100% {
+                transform: scale(1) rotate(0deg);
+            }
+        }
+        @-o-keyframes pop-swirl {
+            0% {
+                transform: scale(0) rotate(360deg);
+            }
+
+            60% {
+                transform: scale(0.8) rotate(-10deg);
+            }
+
+            100% {
+                transform: scale(1) rotate(0deg);
+            }
+        }
+        @keyframes pop-swirl {
+            0% {
+                transform: scale(0) rotate(360deg);
+            }
+
+            60% {
+                transform: scale(0.8) rotate(-10deg);
+            }
+
+            100% {
+                transform: scale(1) rotate(0deg);
+            }
+        }
+        @-webkit-keyframes anvil {
+            0% {
+                transform: scale(5) rotate(0);
+                opacity: 0;
+                box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+            }
+
+            50% {
+                transform: scale(1) rotate(-0.2deg);
+                opacity: 1;
+                box-shadow: 0 0 0 rgba(241, 241, 241, 0.5);
+            }
+
+            75% {
+                transform: scale(1) rotate(0.2deg);
+                opacity: 1;
+                box-shadow: 0 0 250px rgba(241, 241, 241, 0.5);
+            }
+
+            100% {
+                transform: scale(1) rotate(0);
+                opacity: 1;
+                box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+            }
+        }
+        @-moz-keyframes anvil {
+            0% {
+                transform: scale(5) rotate(0);
+                opacity: 0;
+                box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+            }
+
+            50% {
+                transform: scale(1) rotate(-0.2deg);
+                opacity: 1;
+                box-shadow: 0 0 0 rgba(241, 241, 241, 0.5);
+            }
+
+            75% {
+                transform: scale(1) rotate(0.2deg);
+                opacity: 1;
+                box-shadow: 0 0 250px rgba(241, 241, 241, 0.5);
+            }
+
+            100% {
+                transform: scale(1) rotate(0);
+                opacity: 1;
+                box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+            }
+        }
+        @-ms-keyframes anvil {
+            0% {
+                transform: scale(5) rotate(0);
+                opacity: 0;
+                box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+            }
+
+            50% {
+                transform: scale(1) rotate(-0.2deg);
+                opacity: 1;
+                box-shadow: 0 0 0 rgba(241, 241, 241, 0.5);
+            }
+
+            75% {
+                transform: scale(1) rotate(0.2deg);
+                opacity: 1;
+                box-shadow: 0 0 250px rgba(241, 241, 241, 0.5);
+            }
+
+            100% {
+                transform: scale(1) rotate(0);
+                opacity: 1;
+                box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+            }
+        }
+        @-o-keyframes anvil {
+            0% {
+                transform: scale(5) rotate(0);
+                opacity: 0;
+                box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+            }
+
+            50% {
+                transform: scale(1) rotate(-0.2deg);
+                opacity: 1;
+                box-shadow: 0 0 0 rgba(241, 241, 241, 0.5);
+            }
+
+            75% {
+                transform: scale(1) rotate(0.2deg);
+                opacity: 1;
+                box-shadow: 0 0 250px rgba(241, 241, 241, 0.5);
+            }
+
+            100% {
+                transform: scale(1) rotate(0);
+                opacity: 1;
+                box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+            }
+        }
+        @keyframes anvil {
+            0% {
+                transform: scale(5) rotate(0);
+                opacity: 0;
+                box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+            }
+
+            50% {
+                transform: scale(1) rotate(-0.2deg);
+                opacity: 1;
+                box-shadow: 0 0 0 rgba(241, 241, 241, 0.5);
+            }
+
+            75% {
+                transform: scale(1) rotate(0.2deg);
+                opacity: 1;
+                box-shadow: 0 0 250px rgba(241, 241, 241, 0.5);
+            }
+
+            100% {
+                transform: scale(1) rotate(0);
+                opacity: 1;
+                box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+            }
+        }
+        #popup[data-pop="slide-down"] {
+            top: -50%;
+            transition: all .5s ease-in-out;
+        }
+        #popup[data-pop="slide-down"].show {
+            visibility: visible;
+            z-index: 200;
+            opacity: 1;
+            top: 50%;
+        }
+        #popup[data-pop="slide-down"].show ~ #overlay {
+            opacity: 1;
+            visibility: visible;
+            z-index: 100;
+        }
+        #popup[data-pop="pop-in"] {
+            transform: scale(0);
+            transition: all .5s ease-in-out;
+        }
+        #popup[data-pop="pop-in"].show {
+            transform: scale(1);
+            visibility: visible;
+            z-index: 200;
+            opacity: 1;
+        }
+        #popup[data-pop="pop-in"].show ~ #overlay {
+            opacity: 1;
+            visibility: visible;
+            z-index: 100;
+        }
+        #popup[data-pop="pop-swirl"] {
+            transform: scale(0);
+            transition: all .5s ease-in-out;
+        }
+        #popup[data-pop="pop-swirl"].show {
+            -webkit-animation: pop-swirl 1s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+            visibility: visible;
+            z-index: 200;
+            opacity: 1;
+        }
+        #popup[data-pop="pop-swirl"].show ~ #overlay {
+            opacity: 1;
+            visibility: visible;
+            z-index: 100;
+        }
+        #popup[data-pop="anvil"] {
+            transition: all .5s ease-in-out;
+        }
+        #popup[data-pop="anvil"].show {
+            -webkit-animation: anvil 1s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+            visibility: visible;
+            z-index: 200;
+            opacity: 1;
+        }
+        #popup[data-pop="anvil"].show ~ #overlay {
+            opacity: 1;
+            visibility: visible;
+            z-index: 100;
         }
 
     </style>
