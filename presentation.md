@@ -1,3 +1,6 @@
+{% include navigation.html %}
+
+
 # Big Idea, Sponsor, Hosting Plan, GitHub license
 ## Big Idea: 
 - RNG based website collection game
