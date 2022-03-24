@@ -1,8 +1,5 @@
 {% include navigation.html %}
 
-<p align="right"><a href="https://zenxha.github.io/musicgacha/">Home</a></p>
-<p align="right"><a href="https://zenxha.github.io/musicgacha/requirements">Requirements</a></p>
-
 # MusicGacha Project Home Page
 
 ## Project Theme
