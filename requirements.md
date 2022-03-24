@@ -1,3 +1,6 @@
+{% include navigation.html %}
+
+
 ## Project Owner Requirements
 - Project Owner wants us to utilize our gacha system to advertise his favorite songs (vocaloid)
 >- Gave example incorporation of ["Lost Time Memory"](https://www.youtube.com/watch?v=v9wrDGfYCWA) as a high rarity song
