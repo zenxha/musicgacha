@@ -60,7 +60,7 @@ public class AboutUs {
     }
     @GetMapping("/about/nick")
     public String AboutNick(Model model) {
-        model.addAttribute("person", "Nicholas");
+        model.addAttribute("persson", "Nicholas");
         return "homesite/about/aboutnick";
     }
 }
