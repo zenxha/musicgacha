@@ -148,7 +148,7 @@ WantedBy=multi-user.target
 Run and enable service file for the project
 ```
 $ sudo systemctl start musicgacha
-$ systemctl status musicgacha
+$ sudo systemctl status musicgacha
 ```
 
 If running the service file is successful, make the service file persistent on the machine(always running whenever the machine starts up and is on)
