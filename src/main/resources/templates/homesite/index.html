@@ -12,76 +12,24 @@
 <!-- layout::fragment="content" is heart of ThymeLeaf layout -->
 <body><div layout:fragment="content" th:remove="tag">
     <!-- Start of body content specific to page -->
-    <div class="container">
+    <div class="container" id="container">
 
-        <div class="row">
-            <div class="col ">
-                <div>
-                    <img src="https://files.catbox.moe/srhy8h.png"   >
-                </div>
-            </div>
-            <div class="row"></div>
-            <div class="col">
-                <div>
-                    <a id="slide" href="/quiz" class="btn-grad">Get Started</a>
-                </div>
-            </div>
-        </div>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
+        <script>
+            VANTA.HALO({
+                el: "body",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                xOffset: -0.12
+            })
+        </script>
     </div>
-    <style>
 
-        .btn-grad {background-image: linear-gradient(to right, #4CB8C4 0%, #3CD3AD  51%, #4CB8C4  100%)}
-        .btn-grad {
-            margin: 10px;
-            padding: 15px 45px;
-            text-align: center;
-            text-transform: uppercase;
-            transition: 0.5s;
-            background-size: 200% auto;
-            color: white;
-            box-shadow: 0 0 20px #eee;
-            border-radius: 10px;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            /*margin-top: -50px;*/
-            /*margin-left: -100px;*/
-        }
-
-        .btn-grad:hover {
-            background-position: right center; /* change the direction of the change here */
-            color: #fff;
-            text-decoration: none;
-        }
-        #slide {
-            position: absolute;
-            left: -600px;
-            width: 150px;
-            height: 80px;
-            -webkit-animation: slide 0.5s forwards;
-            -webkit-animation-delay: 2s;
-            animation: slide 0.5s forwards;
-            animation-delay: 0s;
-        }
-
-        @-webkit-keyframes slide {
-            100% { left: 0; }
-        }
-
-        @keyframes slide {
-            100% { left: 0; }
-        }
-        @-webkit-keyframes leftslide {
-            100% { right: 0; }
-        }
-
-        @keyframes leftslide {
-            100% { right: 0; }
-        }
-
-
-    </style>
 
     <!-- End of body content specific to page -->
 </div></body>
