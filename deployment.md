@@ -9,37 +9,54 @@
   - very similar to raspberry pi but on a cloud machine that allow access remotely
   - no UI(User Interface), only displays terminal which allows it to be a lightweight OS(Operating System)
   
+```
+$ sudo apt-get update
+```
 
->- sudo apt-get update
-- update apt-get which pulls in applications installed such as "snapd" and "maven" 
+```
+$ sudo update apt-get 
+```
+- which pulls in applications installed such as "snapd" and "maven" 
 
-
->- sudo apt-get upgrade
+```
+$ sudo apt-get upgrade
+```
 - upgrade apt-get which finalizes updates and applies them to the machine
 
-
->- sudo apt-get install maven
+```
+$ sudo apt-get install maven
+```
   - main proponent to running java application
   - apache-maven run the "java -jar" file in order to deploy website
   
->- sudo apt-get install git
+```
+$ sudo apt-get install git
+```
 - use of git allows the pulling and pushing of project as well as committing changes and cloning the project for deployment
 
 
 <h2> Clone project and test Java Web Application </h2>
 
->- sudo git clone https://github.com/zenxha/musicgacha.git
+```
+$ sudo git clone https://github.com/zenxha/musicgacha.git
+```
 - clones project through the use of git
   - use "ls" in the terminal to check for if the "musicgacha" file exists on device
   - if "musicgacha" exists on your machine, continue to the next step
 
->- cd musicgacha
+```
+$ cd musicgacha
+```
 - change directories into the musicgacha project
 
->- sudo mvn package
+```
+$ sudo mvn package
+```
 - package the project using maven in order to create a jar file to run the java application
 
->- sudo java -jar /home/ubuntu/musicgacha/target/coders-0.0.1-SNAPSHOT.jar
+```
+$ sudo java -jar /home/ubuntu/musicgacha/target/coders-0.0.1-SNAPSHOT.jar
+```
 - use jar file to run java application(project)
 
 >- run "localhost:8080" in your browser of choice, IF ON YOU'RE ON YOUR DEPLOYMENT DEVICE
@@ -67,10 +84,14 @@ Outbound Rules
 
 <h2> Setup NGINX </h2>
 
->- sudo apt-get install nginx
+```
+$ sudo apt-get install nginx
+```
 - if not installed, install nginx in order to reverse-proxy(using localhost, run project to domain directly without needing to change IP address manually)
 
->- sudo nano /etc/nginx/sites-available/musicgacha
+```
+$ sudo nano /etc/nginx/sites-available/musicgacha
+```
 - create an nginx file to reverse proxy project from "localhost"
 
 ```
