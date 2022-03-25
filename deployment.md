@@ -12,10 +12,6 @@
 ```
 $ sudo apt-get update
 ```
-
-```
-$ sudo update apt-get 
-```
 - which pulls in applications installed such as "snapd" and "maven" 
 
 ```
