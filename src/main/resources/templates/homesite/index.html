@@ -6,14 +6,18 @@
       layout:decorate="~{base/layout}" lang="en">
 
 <head><div layout:fragment="metadata" th:remove="tag">
-    <title>SCF</title>
+    <title>MusicGacha</title>
+    <style>
+        html {
+            overflow-y: hidden;
+        }
+    </style>
 </div></head>
 
 <!-- layout::fragment="content" is heart of ThymeLeaf layout -->
 <body><div layout:fragment="content" th:remove="tag">
     <!-- Start of body content specific to page -->
     <div class="container" id="container">
-
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
@@ -23,7 +27,7 @@
                 mouseControls: true,
                 touchControls: true,
                 gyroControls: false,
-                minHeight: 200.00,
+                minHeight: 800.00,
                 minWidth: 200.00,
                 xOffset: -0.12
             })
