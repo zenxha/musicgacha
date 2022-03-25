@@ -6,7 +6,7 @@
 
 - create instance of Ubuntu 20.04
   - the newest Ubuntu version within the free tier
-  - very similar to raspberry pi but on a cloud machine that allow access remotely
+  - very similar to raspberry pi but on a cloud machine that allow access remotely, since they are both derivatives of Debian
   - no UI(User Interface), only displays terminal which allows it to be a lightweight OS(Operating System)
   
 ```
