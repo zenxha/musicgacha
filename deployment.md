@@ -139,7 +139,7 @@ After=network.target
 [Service]
 User=ubuntu
 Restart=always
-ExecStart=java -jar /home/ubuntu/p1-codecodecoders/target/csa-0.0.1-SNAPSHOT.jar
+ExecStart=java -jar /home/ubuntu/musicgacha/target/coders-0.0.1-SNAPSHOT.jar
 
 [Install]
 WantedBy=multi-user.target 
@@ -147,11 +147,11 @@ WantedBy=multi-user.target
 
 Run and enable service file for the project
 ```
-$ sudo systemctl start p1-codecodecoders
-$ systemctl status p1-codecodecoders
+$ sudo systemctl start musicgacha
+$ systemctl status musicgacha
 ```
 
 If running the service file is successful, make the service file persistent on the machine(always running whenever the machine starts up and is on)
 ```
-$ sudo systemctl enable p1-codecodecoders
+$ sudo systemctl enable musicgacha
 ```
