@@ -16,6 +16,7 @@
 - Material theme webpage mockup color scheme [here](https://material-theme.com/), will ikley implement from this source
 
 ## Sponsor:
+![a](https://files.catbox.moe/hnmgmk.png)
 - Current sponsor of project is Anthony
 - Student connection allows us to maintain close connection, as his availiability is more frequent than teacher or other kind of person
 
