@@ -1,0 +1,85 @@
+
+<!-- This page is illustrative and contains ideas about HTML formatting -->
+<!DOCTYPE HTML>
+<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{base/layout}" lang="en">
+
+<head><div layout:fragment="metadata" th:remove="tag">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" th:href="@{/css/about.css}">
+</div></head>
+
+<!-- layout::fragment="content" is heart of ThymeLeaf layout -->
+<body><div layout:fragment="content" th:remove="tag">
+    <div class="splitter"></div>
+    <div class="ourteam">
+        <h3 class="ourteam-text">Our Team</h3>
+        <img class="img-head" th:src="@{/images/group.jpg}" height="300px" width="500px">
+    </div>
+    <div class="splitter"></div>
+    <div class="person" id="expand">
+        <img class="img-person" th:src="@{/images/sam2.png}" height="200px" width="200px">
+        <div class="name" id="name">
+            <p>Name</p>
+            <p>Group Role</p>
+        </div>
+        <p class="text"></p>
+        <button type="button" class="arrow" id="arrowbtn" onclick="expand(), arrow(), name_move()"></button>
+    </div>
+    <div class="splitter"></div>
+    <div class="person">
+        <img class="img-person" th:src="@{/images/sam2.png}" height="200px" width="200px">
+        <div>
+            <p class="name">Sam Koenig</p>
+            <p class="name" style="margin-top: 10px;">Group Role</p>
+        </div>
+        <button class="arrow"></button>
+    </div>
+    <div class="splitter"></div>
+    <div class="person">
+        <img class="img-person" th:src="@{/images/sam2.png}" height="200px" width="200px">
+        <div>
+            <p class="name">Sam Koenig</p>
+            <p class="name" style="margin-top: 10px;">Group Role</p>
+        </div>
+        <button class="arrow"></button>
+    </div>
+    <div class="splitter"></div>
+
+
+<script>
+    function expand() {
+        var x = document.getElementById("expand");
+        if (x.className == "person-expanded") {
+            x.className = "person";
+        } else {
+            x.className = "person-expanded";
+        }
+    }
+
+    function arrow() {
+        var x = document.getElementById("arrowbtn");
+        if (x.className == "arrow-expanded") {
+            x.className = "arrow";
+        } else {
+            x.className = "arrow-expanded";
+        }
+    }
+
+    function name_move() {
+        var x = document.getElementById("name");
+        if (x.className == "name-expanded") {
+            x.className = "name";
+        } else {
+            x.className = "name-expanded";
+        }
+    }
+</script>
+
+</div></body>
+
+</html>
