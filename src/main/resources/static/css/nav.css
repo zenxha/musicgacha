@@ -3,7 +3,7 @@
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
   text-decoration: none;
-  position: absolute;
+  position: fixed;
   width: 95%;
   border-radius: 20px;
   margin-left: 2.5%;

@@ -23,13 +23,14 @@
     <div class="splitter"></div>
     <div class="person" id="expand">
         <img class="img-person" th:src="@{/images/sam2.png}" height="200px" width="200px">
-        <div class="name" id="name">
+        <div class="name">
             <p>Name</p>
             <p>Group Role</p>
         </div>
         <p class="text"></p>
-        <button type="button" class="arrow" id="arrowbtn" onclick="expand(), arrow(), name_move()"></button>
+        <button type="button" class="arrow" id="arrowbtn" onclick="expand(), arrow(), text()"></button>
     </div>
+    <p class="text" id="text">skjdhgjdlkujdkbnlgijligyhuj;oiflkhefhklujmg;lskjnghklnvjgsdhlkjhlkjsbg;iluji;liubdhijnhnlbhglkj</p>
     <div class="splitter"></div>
     <div class="person">
         <img class="img-person" th:src="@{/images/sam2.png}" height="200px" width="200px">
@@ -76,6 +77,15 @@
             x.className = "name";
         } else {
             x.className = "name-expanded";
+        }
+    }
+
+    function text() {
+        var x = document.getElementById("text");
+        if (x.className == "text-expanded") {
+            x.className = "text";
+        } else {
+            x.className = "text-expanded";
         }
     }
 </script>

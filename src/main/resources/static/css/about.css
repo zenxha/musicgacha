@@ -4,8 +4,6 @@ body{
     font-family: 'Lexend Deca', sans-serif;
     /* background-color: rgb(13, 13, 26); */
     color: white;
-    background-color: black;
-    background-image: linear-gradient(315deg, #080f1d 0%, #0a1427 74%);
 }
 
 .ourteam{
@@ -19,7 +17,8 @@ body{
     position: absolute;
     left: 270px;
     font-size: 40px;
-    
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 .img-head{
@@ -43,7 +42,7 @@ body{
     height: auto;
     padding-left: 150px;;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     display: flex;
     align-items: center;
 }
@@ -51,13 +50,14 @@ body{
 .person-expanded{
     height: auto;
     padding-left: 150px;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding-right: 150px;
     width: auto;
-}
+    align-items: center;
+}   
 
 .img-person{
     border-radius: 1000px;
@@ -71,6 +71,7 @@ body{
     justify-content: center;
     width: fit-content;
     line-height: 15px;
+    flex-direction: row;
 }
 
 .arrow{
@@ -82,6 +83,7 @@ body{
     background-color: transparent;
     cursor: pointer;
     margin-left: 70%;
+    margin-bottom: auto;
     position: absolute;
 }
 
@@ -105,7 +107,6 @@ body{
     cursor: pointer;
     margin-left: 70%;
     position: absolute;
-    margin-top: 100px;
 }
 
 .name-expanded{
@@ -113,8 +114,17 @@ body{
     font-size: 30px;
     margin: 10px;
     line-height: 15px;
+    margin-top: 30px;
+    flex-direction: row;
 }
 
 .text{
-    flex-direction: row;
+    text-indent: -9999999px;
+    padding: none;
+    height: 0;
+}
+
+.text-expanded{
+    color:red;
+    align-items: center;
 }
