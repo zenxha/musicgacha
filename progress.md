@@ -1,1 +1,5 @@
-# Progress Update
+{% include navigation.html %}
+
+# Progress Updates
+
+
