@@ -47,18 +47,6 @@ body{
     align-items: center;
 }
 
-.person-expanded{
-    height: auto;
-    padding-left: 150px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-    padding-right: 150px;
-    width: auto;
-    align-items: center;
-}   
-
 .img-person{
     border-radius: 1000px;
     float: left;
@@ -66,8 +54,7 @@ body{
 
 .name{
     padding-left: 20px;
-    font-size: 30px;
-    margin: 0px;  
+    font-size: 30px;  
     justify-content: center;
     width: fit-content;
     line-height: 15px;
@@ -109,22 +96,15 @@ body{
     position: absolute;
 }
 
-.name-expanded{
-    width: fit-content;
-    font-size: 30px;
-    margin: 10px;
-    line-height: 15px;
-    margin-top: 30px;
-    flex-direction: row;
-}
-
 .text{
-    text-indent: -9999999px;
     padding: none;
     height: 0;
+    font-size: 0;
 }
 
 .text-expanded{
-    color:red;
     align-items: center;
+    padding-left: 370px;
+    margin-top: 0;
+    font-size: 20px;
 }

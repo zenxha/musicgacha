@@ -15,79 +15,192 @@
 
 <!-- layout::fragment="content" is heart of ThymeLeaf layout -->
 <body><div layout:fragment="content" th:remove="tag">
-    <div class="splitter"></div>
+    <div class="splitter"></div> <!-- line to divide each persons section -->
     <div class="ourteam">
-        <h3 class="ourteam-text">Our Team</h3>
+        <h3 class="ourteam-text">Our Team</h3> <!-- header box for team image -->
         <img class="img-head" th:src="@{/images/group.jpg}" height="300px" width="500px">
     </div>
     <div class="splitter"></div>
     <div class="person" id="expand">
-        <img class="img-person" th:src="@{/images/sam2.png}" height="200px" width="200px">
+        <img class="img-person" th:src="@{/images/allen.jpg}" height="200px" width="200px">
         <div class="name">
-            <p>Name</p>
-            <p>Group Role</p>
+            <p>Allen Xu</p>
+            <p>Scrum Leader</p>
+        </div>
+        <button type="button" class="arrow" id="arrow1" onclick="expand1()"></button> <!-- dropdown arrow button -->
+    </div>
+    <p class="text" id="text1">
+        <a href="https://github.com/purplebears321">GitHub Profile</a><br>
+        <a href="https://purplebears321.github.io/Allen/">GitHub Pages</a><br>
+        <a href="https://github.com/zenxha/musicgacha/projects/1?card_filter_query=assignee%3Apurplebears321">Assigned Tickets</a><br>
+    </p>
+    <div class="splitter"></div>
+    <div class="person" id="expand">
+        <img class="img-person" th:src="@{/images/chris.jpg}" height="200px" width="200px">
+        <div class="name">
+            <p>Chris Rubin</p>
+            <p>Deployment Manager</p>
         </div>
         <p class="text"></p>
-        <button type="button" class="arrow" id="arrowbtn" onclick="expand(), arrow(), text()"></button>
+        <button type="button" class="arrow" id="arrow2" onclick="expand2()"></button>
     </div>
-    <p class="text" id="text">skjdhgjdlkujdkbnlgijligyhuj;oiflkhefhklujmg;lskjnghklnvjgsdhlkjhlkjsbg;iluji;liubdhijnhnlbhglkj</p>
+    <p class="text" id="text2">
+        <a href="https://github.com/Chris-Ru">GitHub Profile</a><br>
+        <a href="https://chris-ru.github.io/">GitHub Pages</a><br>
+        <a href="https://github.com/zenxha/musicgacha/projects/1?card_filter_query=assignee%3Achris-ru">Assigned Tickets</a><br>
+    </p>
     <div class="splitter"></div>
-    <div class="person">
-        <img class="img-person" th:src="@{/images/sam2.png}" height="200px" width="200px">
-        <div>
-            <p class="name">Sam Koenig</p>
-            <p class="name" style="margin-top: 10px;">Group Role</p>
+    <div class="person" id="expand">
+        <img class="img-person" th:src="@{/images/komay.jpg}" height="200px" width="200px">
+        <div class="name">
+            <p>Komay Sugiyama</p>
+            <p>Backend</p>
         </div>
-        <button class="arrow"></button>
+        <p class="text"></p>
+        <button type="button" class="arrow" id="arrow3" onclick="expand3()"></button>
     </div>
+    <p class="text" id="text3">
+        <a href="https://github.com/zenxha">GitHub Profile</a><br>
+        <a href="https://zenxha.github.io/komay-tri3/">GitHub Pages</a><br>
+        <a href="https://github.com/zenxha/musicgacha/projects/1?card_filter_query=assignee%3Azenxha">Assigned Tickets</a><br>
+    </p>
     <div class="splitter"></div>
-    <div class="person">
-        <img class="img-person" th:src="@{/images/sam2.png}" height="200px" width="200px">
-        <div>
-            <p class="name">Sam Koenig</p>
-            <p class="name" style="margin-top: 10px;">Group Role</p>
+    <div class="person" id="expand">
+        <img class="img-person" th:src="@{/images/sam.jpg}" height="200px" width="200px">
+        <div class="name">
+            <p>Sam Koenig</p>
+            <p>Frontend / Design</p>
         </div>
-        <button class="arrow"></button>
+        <p class="text"></p>
+        <button type="button" class="arrow" id="arrow4" onclick="expand4()"></button>
     </div>
+    <p class="text" id="text4">
+        <a href="https://github.com/samkoenig9">GitHub Profile</a><br>
+        <a href="https://samkoenig9.github.io/sam-tri3/">GitHub Pages</a><br>
+        <a href="https://github.com/zenxha/musicgacha/projects/1?card_filter_query=assignee%3Asamkoenig9">Assigned Tickets</a><br>
+    </p>
     <div class="splitter"></div>
-
+    <div class="person" id="expand">
+        <img class="img-person" th:src="@{/images/caleb.png}" height="200px" width="200px">
+        <div class="name">
+            <p>Caleb Kim</p>
+            <p>GitHub Admin</p>
+        </div>
+        <p class="text"></p>
+        <button type="button" class="arrow" id="arrow5" onclick="expand5()"></button>
+    </div>
+    <p class="text" id="text5">
+        <a href="https://github.com/calebkimsd">GitHub Profile</a><br>
+        <a href="https://calebkimsd.github.io/Tri-3-CSA/">GitHub Pages</a><br>
+        <a href="https://github.com/zenxha/musicgacha/projects/1?card_filter_query=assignee%3Acalebkimsd">Assigned Tickets</a><br>
+    </p>
+    <div class="splitter"></div>
+    <div class="person" id="expand"> <!-- sponsor box -->
+        <img class="img-person" th:src="@{/images/anthony.jpeg}" height="200px" width="200px">
+        <div class="name">
+            <p>Anthony Vo</p>
+            <p>Project Sponsor</p>
+        </div>
+        <p class="text"></p>
+        <button type="button" class="arrow" id="arrow6" onclick="expand6()"></button>
+    </div>
+    <p class="text" id="text6">
+        <a href="https://zenxha.github.io/musicgacha/sponsor">Sponsor Objectives</a><br>
+    </p>
+    <div class="splitter" style="margin-bottom: 50px;"></div>
 
 <script>
-    function expand() {
-        var x = document.getElementById("expand");
-        if (x.className == "person-expanded") {
-            x.className = "person";
-        } else {
-            x.className = "person-expanded";
-        }
-    }
 
-    function arrow() {
-        var x = document.getElementById("arrowbtn");
-        if (x.className == "arrow-expanded") {
-            x.className = "arrow";
-        } else {
-            x.className = "arrow-expanded";
-        }
+function expand1() { //javascript functionality for each dropdown button
+    var x = document.getElementById("arrow1");
+    if (x.className == "arrow-expanded") {
+        x.className = "arrow";
+    } else {
+        x.className = "arrow-expanded";
     }
+    var x = document.getElementById("text1");
+    if (x.className == "text-expanded") {
+        x.className = "text";
+    } else {
+        x.className = "text-expanded";
+    }
+}
 
-    function name_move() {
-        var x = document.getElementById("name");
-        if (x.className == "name-expanded") {
-            x.className = "name";
-        } else {
-            x.className = "name-expanded";
-        }
+function expand2() {
+    var x = document.getElementById("arrow2");
+    if (x.className == "arrow-expanded") {
+        x.className = "arrow";
+    } else {
+        x.className = "arrow-expanded";
     }
+    var x = document.getElementById("text2");
+    if (x.className == "text-expanded") {
+        x.className = "text";
+    } else {
+        x.className = "text-expanded";
+    }
+}
 
-    function text() {
-        var x = document.getElementById("text");
-        if (x.className == "text-expanded") {
-            x.className = "text";
-        } else {
-            x.className = "text-expanded";
-        }
+function expand3() {
+    var x = document.getElementById("arrow3");
+    if (x.className == "arrow-expanded") {
+        x.className = "arrow";
+    } else {
+        x.className = "arrow-expanded";
     }
+    var x = document.getElementById("text3");
+    if (x.className == "text-expanded") {
+        x.className = "text";
+    } else {
+        x.className = "text-expanded";
+    }
+}
+
+function expand4() {
+    var x = document.getElementById("arrow4");
+    if (x.className == "arrow-expanded") {
+        x.className = "arrow";
+    } else {
+        x.className = "arrow-expanded";
+    }
+    var x = document.getElementById("text4");
+    if (x.className == "text-expanded") {
+        x.className = "text";
+    } else {
+        x.className = "text-expanded";
+    }
+}
+
+function expand5() {
+    var x = document.getElementById("arrow5");
+    if (x.className == "arrow-expanded") {
+        x.className = "arrow";
+    } else {
+        x.className = "arrow-expanded";
+    }
+    var x = document.getElementById("text5");
+    if (x.className == "text-expanded") {
+        x.className = "text";
+    } else {
+        x.className = "text-expanded";
+    }
+}
+
+function expand6() {
+    var x = document.getElementById("arrow6");
+    if (x.className == "arrow-expanded") {
+        x.className = "arrow";
+    } else {
+        x.className = "arrow-expanded";
+    }
+    var x = document.getElementById("text6");
+    if (x.className == "text-expanded") {
+        x.className = "text";
+    } else {
+        x.className = "text-expanded";
+    }
+}
+
 </script>
 
 </div></body>
