@@ -3,6 +3,22 @@
 # PBL Week 1 Reflection
 
 ## Faculty Lectures
+### Unit 2 Lecture
+- To run code on a machine you must use machine language(hard for programmers to understand) in some way
+>- Programming language is designed to make it easier for programmers to understand
+- Assembler converts the assembly language program to machine language
+- Programmers wanted to use higher level programming (easier to understand for programmers)
+>- try to move away from CPU thinking and more into human thinking
+- Languages developed sometimes had very specific purposes (some languages are business specific)
+
+**Java**
+- Java developed partly from C++
+- Object Oriented Programming
+>- Knowing how to use objects allows you to solve problems, doesn't need to actually fully understand it
+>- OOP allows to define objects to use later to solve problems in a program
+>- OOP needs a "factory" which is a class that gernerats objects
+>- Sometimes the code to a class isn't given, but by knowing the purpose you can use them
+
 ### Unit 1 Lecture
 **Primitive Data Types**
 - Declaration tells Java the type of variable you want to make (ex: int num;)
