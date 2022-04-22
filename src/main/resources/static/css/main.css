@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
 body{
-    background: -webkit-linear-gradient(315deg, #060d1a 0%, #0d162c 75%);
-    background: linear-gradient(315deg, #060d1a 0%, #0d162c 75%);
+    background: linear-gradient(125deg, #060d1a 0%, #101a35 75%);
+    background: -webkit-linear-gradient(125deg, #060d1a 0%, #101a35 75%);
     min-height: 100%;
     background-attachment: fixed;
     background-size: cover;
+    background-color: black;
 }
 
 body {
@@ -183,18 +184,19 @@ body {
     color: #a2a8bd 
 }
 
+
+/* ----------NAVBAR---------- */
+
 .cnav {
-  background-color: rgba(43, 43, 43, 0.8);
+  background-color: rgba(40, 40, 40, 0.8);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
   text-decoration: none;
   position: relative;
   width: 95%;
-  border-radius: 20px;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-  z-index: 1000000;
   margin: 15px 2.5% 15px 2.5%;
+  border-radius: 20px;
+  z-index: 1000000;
 }
 
 .navtext {
@@ -205,7 +207,7 @@ body {
 }
 
 .navtext:hover {
-  color:gray;
+  color:rgb(45, 104, 223);
   transition: .15s;
 }
 

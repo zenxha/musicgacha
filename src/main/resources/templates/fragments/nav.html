@@ -2,7 +2,9 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>...</title>
-    <link th:href="@{/css/nav.css}" rel="stylesheet" /></head>
+    <link th:href="@{/css/nav.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 <!-- Begin navigation fragments -->
 <nav class="cnav navbar navbar-expand" th:fragment="header">
     <!-- <a href="/">
@@ -28,8 +30,8 @@
             <li class="nav-item d-flex">
                 <form class="d-flex" action="https://youtube.com/results" method="get">
                     <input class="form-control me-2" name="search_query" type="search" placeholder="Search"
-                           aria-label="Search">
-                    <button class="btn btn-outline-error" type="submit">Search</button>
+                           aria-label="Search" style="border-radius: 10px 0 0 10px;">
+                    <button class="btn btn-outline-error" type="submit" style="border-radius: 0 10px 10px 0;"><i class="fa fa-search"></i></button>
                 </form>
             </li>
         </ul>
