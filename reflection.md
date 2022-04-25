@@ -4,7 +4,7 @@
 ## AX Code Reflection
 - Tester methods were actually way more useful than I thought. Implementing it into my [rarity code](https://github.com/zenxha/musicgacha/blob/a4885cd57fea7dc379b372fd512e036ea7df71ef/src/main/java/com/musicgacha/controllers/RandomController.java#L59-L75), which had a lot of bugs at first, let me know that the algorithm itself wasn't what was bugging out the system, and helped isolate where the issue actually was
 - I also found out that by using [forloops to create multiple instances of the same element in an ArrayList](https://github.com/zenxha/musicgacha/blob/a4885cd57fea7dc379b372fd512e036ea7df71ef/src/main/java/com/musicgacha/controllers/RandomController.java#L23-L25), along with using a [random selector for elements of an arraylist](https://github.com/zenxha/musicgacha/blob/a4885cd57fea7dc379b372fd512e036ea7df71ef/src/main/java/com/musicgacha/controllers/RandomController.java#L53-L56), you can kind of create some probability and make elements rarer than others
->-method is stil lvery rudamentary and can definatly be improved upon though. 
+>- Note: This method is stil very scuffed and can definatly be improved upon in the future. 
 ## AX Faculty Lectures
 ### Unit 2 Lecture
 - To run code on a machine you must use machine language(hard for programmers to understand) in some way
