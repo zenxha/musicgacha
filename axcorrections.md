@@ -1,3 +1,5 @@
+{% include navigation.html %}
+
 ## Allen's 2020 MC Corrections
 
 **Question 15**
