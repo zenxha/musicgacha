@@ -1,6 +1,8 @@
 {% include navigation.html %}
 
 ## Allen's 2020 MC Corrections
+**Score**
+![30/40](https://files.catbox.moe/fh37kc.png)
 
 **Question 15**
 
