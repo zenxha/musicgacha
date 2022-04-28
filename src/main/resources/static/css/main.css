@@ -214,3 +214,19 @@ body {
 .navbar-brand {
   font-size: 25px
 }
+
+.dropdown-menu{
+    background-color: rgba(40, 40, 40, 0.8);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+.dropdown-item{
+    color: white;
+    padding: 0 20px 0 20px;
+    line-height: 30px;
+}
+
+.dropdown-item:hover{
+    background: none;
+}

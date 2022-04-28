@@ -81,8 +81,9 @@ body{
 
 .box-text{
     text-align: center;
-    line-height: 160px;
+    line-height: 30px;
     font-size: 30px;
+    padding: 65px 0 65px 0;
 }
 
 h1{

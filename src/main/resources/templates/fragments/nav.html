@@ -2,8 +2,10 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>...</title>
-    <link th:href="@{/css/nav.css}" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 </head>
 <!-- Begin navigation fragments -->
 <nav class="cnav navbar navbar-expand" th:fragment="header">
@@ -17,16 +19,25 @@
         <ul class="navbar-nav mr-auto">
             <!--root menu -->
             <li class="nav-item active">
-                <a class="nav-link navtext" href="/about">About Us<span class="sr-only">(current)</span></a>
+                <a class="nav-link navtext" href="/play">Play</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link navtext" href="/shop">Shop<span class="sr-only">(current)</span></a>
+                <a class="nav-link navtext" href="/howtoplay">How to Play</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link navtext" href="https://zenxha.github.io/musicgacha/">GitHub Pages<span class="sr-only">(current)</span></a>
+                <a class="nav-link navtext" href="/about">About Us</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link navtext" href="/random">Random Generation Test<span class="sr-only">(current)</span></a>
+                <a class="nav-link navtext" href="/shop">Shop</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle navtext" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  More
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="navtext dropdown-item" href="https://zenxha.github.io/musicgacha/" target="_blank">GitHub Pages</a>
+                  <a class="navtext dropdown-item" href="/random">Random Generation Test</a>
+                </div>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
