@@ -1,36 +1,13 @@
-
-<!-- This page is illustrative and contains ideas about HTML formatting -->
 <!DOCTYPE HTML>
-<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
 <html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
       layout:decorate="~{base/layout}" lang="en">
 
 <head><div layout:fragment="metadata" th:remove="tag">
     <title>Shop</title>
-    <script
-            src="https://code.jquery.com/jquery-3.6.0.js"
-            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-            crossorigin="anonymous"></script>
-    <style>
-        .card.product .btn {
-            bottom: 1.5rem;
-            max-width: 80%;
-        }
-
-        .price {
-            font-size: 1.75rem;
-        }
-
-        @media (max-width: 768px) {
-            .card-container {
-                margin-bottom: 2rem;
-            }
-        }
-    </style>
 </div></head>
 
 <!-- layout::fragment="content" is heart of ThymeLeaf layout -->
-<body><div layout:fragment="content" th:remove="tag">
+<body><div layout:fragment="content" th:remove="tag"><div class="animation-region">
     <div class="modal fade" id="confirmation" tabindex="-1" aria-labelledby="confirmationLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -86,7 +63,7 @@
             </div>
         </div>
     </div>
-</div></body>
+</div></div></body>
 
 <script>
     $('#confirmation').on('show.bs.modal', function (event) {
@@ -104,5 +81,20 @@
 
     }
 </script>
+<style>
+    .card.product .btn {
+        bottom: 1.5rem;
+        max-width: 80%;
+    }
 
+    .price {
+        font-size: 1.75rem;
+    }
+
+    @media (max-width: 768px) {
+        .card-container {
+            margin-bottom: 2rem;
+        }
+    }
+</style>
 </html>

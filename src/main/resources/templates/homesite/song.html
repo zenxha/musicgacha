@@ -1,49 +1,13 @@
-
-<!-- This page is illustrative and contains ideas about HTML formatting -->
 <!DOCTYPE HTML>
-<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
 <html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
       layout:decorate="~{base/layout}" lang="en">
 
 <head><div layout:fragment="metadata" th:remove="tag">
     <title>Blank Page</title>
-    <style>
-
-        .fa-google {
-            color: #dc4e41
-        }
-        .fa-spotify {
-            color: #1DB954
-        }
-
-        .fa-youtube {
-            color: #cd201f
-        }
-        .neo-button {
-            width: 40px;
-            height: 40px;
-            outline: 0 ;
-            cursor: pointer;
-            color: #fff;
-            font-size: 15px;
-            border: none;
-            margin-right: 10px;
-            border-radius: 50%;
-            background: linear-gradient(145deg, #d6d6d6, #e3b8f5);
-            box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff
-        }
-
-        .neo-button:active {
-            border-radius: 50%;
-            background: linear-gradient(145deg, #d6d6d6, #ffffff);
-            box-shadow: inset 20px 20px 60px #e3b8f5, inset -20px -20px 60px #ffffff
-        }
-    </style>
 </div></head>
 
-<!-- layout::fragment="content" is heart of ThymeLeaf layout -->
-<body><div layout:fragment="content" th:remove="tag">
-    <!-- Start of body content specific to page -->
+<body><div layout:fragment="content" th:remove="tag"><div class="animation-region">
+
     <div class="container">
         <div class="jumbotron">
             <div class="row">
@@ -53,14 +17,18 @@
                     <hr class="my-4">
                     <p class="lead">
                         <a class="btn btn-primary btn-lg" onclick="getSong()" role="button">New Song</a>
-                        <a class="btn btn-warning btn-lg" href="api/random" role="button">API src</a>
+                        <a class="btn btn-warning btn-lg" href="api/random" role="button" target="_blank">API src</a>
                     </p>
                     <p th:utext="${song.getLyrics}" id="lyrics"></p>
 
                 </div>
                 <div class="col">
                     <h1 class="display-4">Song Data</h1>
-                    <div class="social-buttons mt-5"> <a th:href="${song.getGoogle()}" id="googlelink" class="neo-button"><i class="fa fa-google a-1x"></i> </a> <a th:attr="href=${song.getSpotifyUrl()}" id="spotifylink" class="neo-button"><i class="fa fa-spotify fa-1x"></i></a>  <a th:href="${song.getYoutubeUrl()}" id="youtubelink" class="neo-button"><i class="fa fa-youtube fa-1x"></i> </a> </div>
+                    <div class="social-buttons mt-5">
+                         <a th:href="${song.getGoogle()}" id="googlelink" class="neo-button"><i class="fa fa-google a-1x"></i></a>
+                         <a th:attr="href=${song.getSpotifyUrl()}" id="spotifylink" class="neo-button"><i class="fa fa-spotify fa-1x"></i></a>
+                         <a th:href="${song.getYoutubeUrl()}" id="youtubelink" class="neo-button"><i class="fa fa-youtube fa-1x"></i></a>
+                    </div>
                     <hr class="my-4">
                     <!-- 16:9 aspect ratio -->
                     <div class="embed-responsive embed-responsive-16by9">
@@ -70,20 +38,12 @@
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe id="spotifyembed" th:attr="src=${song.getSpotifyEmbed()}" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                     </div>
-
                 </div>
             </div>
-
-
         </div>
     </div>
 
     <!-- End of body content specific to page -->
-
-    <script
-            src="https://code.jquery.com/jquery-3.6.0.js"
-            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-            crossorigin="anonymous"></script>
     <script th:inline="javascript">
 
         const getSong = () => {
@@ -125,7 +85,40 @@
 
         }
     </script>
+    <style>
+        body{
+            color:black;
+        }
 
-</div></body>
+        .fa-google {
+            color: #dc4e41
+        }
+        .fa-spotify {
+            color: #1DB954
+        }
 
+        .fa-youtube {
+            color: #cd201f
+        }
+        .neo-button {
+            width: 40px;
+            height: 40px;
+            outline: 0 ;
+            cursor: pointer;
+            color: #fff;
+            font-size: 15px;
+            border: none;
+            margin-right: 10px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #d6d6d6, #e3b8f5);
+            box-shadow: 20px 20px 60px #cacaca, -20px -20px 60px #ffffff
+        }
+
+        .neo-button:active {
+            border-radius: 50%;
+            background: linear-gradient(145deg, #d6d6d6, #ffffff);
+            box-shadow: inset 20px 20px 60px #e3b8f5, inset -20px -20px 60px #ffffff
+        }
+    </style>
+<div></div></body>
 </html>

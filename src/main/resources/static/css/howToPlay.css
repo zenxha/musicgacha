@@ -30,3 +30,16 @@
     font-size: 60px;
     padding-top: 7px;
 }
+
+.anim-1{animation: anim-1 .7s;}
+.anim-2{animation: anim-2 .7s;}
+
+@keyframes anim-1{
+    0% {transform: translateX(-50px);}
+    100% {transform: translateX(0);}
+}
+
+@keyframes anim-2{
+    0% {transform: translateX(50px);}
+    100% {transform: translateX(0);}
+}
