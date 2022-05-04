@@ -1,0 +1,32 @@
+.htp-container{
+    display: flex;
+    margin: 40px 17.5vw 40px 17.5vw;
+    text-align: center;
+}
+
+.num-left{
+    width: 25vw;
+}
+
+.num-right {
+    width: 25vw;
+}
+
+.number{
+    font-size: 150px;
+}
+
+.step{
+    background-color: rgba(40, 40, 40, 0.8);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    width: 40vw;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.title{
+    text-align: center;
+    font-size: 60px;
+    padding-top: 7px;
+}
