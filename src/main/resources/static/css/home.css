@@ -3,19 +3,27 @@
 body{
     font-family: 'Lexend Deca', sans-serif;
     color: white;
+    height: 100vh;
 }
 
 .home-container{
     color: white;
     display: flex;
-    margin: 70px 10vw 0 10vw;
+    height:550px;
+    width: 80vw;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .left{
     /* border: red 1px solid; */
-    width: 40vw;
-    height: 550px;
     text-align: center;
+    width: 50%;
 }
 
 .right {
@@ -23,8 +31,7 @@ body{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(4, 1fr);
-    width: 40vw;
-    height: 550px;
+    width: 50%;
 }
 
 .grid-1 {

@@ -6,10 +6,12 @@
 
 .num-left{
     width: 25vw;
+    align-self: center;
 }
 
 .num-right {
     width: 25vw;
+    align-self: center;
 }
 
 .number{
@@ -23,6 +25,7 @@
     width: 40vw;
     padding: 30px;
     border-radius: 30px;
+    align-self: center;
 }
 
 .title{
