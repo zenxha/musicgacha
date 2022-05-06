@@ -1,5 +1,5 @@
 # musicgacha
-
+[Github page](https://zenxha.github.io/musicgacha/)
 <table>
   <tr>
     <th> Member </th>

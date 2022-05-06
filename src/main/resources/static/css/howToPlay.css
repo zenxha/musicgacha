@@ -1,0 +1,48 @@
+.htp-container{
+    display: flex;
+    margin: 40px 17.5vw 40px 17.5vw;
+    text-align: center;
+}
+
+.num-left{
+    width: 25vw;
+    align-self: center;
+}
+
+.num-right {
+    width: 25vw;
+    align-self: center;
+}
+
+.number{
+    font-size: 150px;
+}
+
+.step{
+    background-color: rgba(40, 40, 40, 0.8);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    width: 40vw;
+    padding: 30px;
+    border-radius: 30px;
+    align-self: center;
+}
+
+.title{
+    text-align: center;
+    font-size: 60px;
+    padding-top: 7px;
+}
+
+.anim-1{animation: anim-1 .7s;}
+.anim-2{animation: anim-2 .7s;}
+
+@keyframes anim-1{
+    0% {transform: translateX(-50px);}
+    100% {transform: translateX(0);}
+}
+
+@keyframes anim-2{
+    0% {transform: translateX(50px);}
+    100% {transform: translateX(0);}
+}
