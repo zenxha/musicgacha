@@ -19,13 +19,14 @@
 }
 
 .step{
-    background-color: rgba(40, 40, 40, 0.8);
+    background-color: var(--accent);
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
     width: 40vw;
     padding: 30px;
     border-radius: 30px;
     align-self: center;
+    color: white;
 }
 
 .title{

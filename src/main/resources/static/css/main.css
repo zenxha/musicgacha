@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
+:root{
+    --darkgray: rgba(40, 40, 40, 0.8);
+    --accent:  rgba(40, 40, 40, 0.8);
+    --darkaccent: rgba(21, 21, 21, 0.8);
+}
+
 body{
     background: linear-gradient(125deg, #060d1a 0%, #101a35 75%);
     background: -webkit-linear-gradient(125deg, #060d1a 0%, #101a35 75%);
@@ -11,7 +17,7 @@ body{
 
 body {
     font-family: 'Lexend Deca', sans-serif;
-    color: rgb(255, 255, 255);
+    color: white;
     -webkit-font-smoothing: optimizeLegibility;
     -moz-osx-font-smoothing: optimizeLegibility;
     text-rendering: optimizeLegibility;
@@ -33,7 +39,6 @@ body {
 }
 .heading {
     padding: 160px 50px ;
-    color: #fff ;
     background-image: url("../assets/wavy-purple-by-nouridio.svg") ;
     background-position: bottom ;
     background-size: 300% ;
@@ -188,7 +193,7 @@ body {
 /* ----------NAVBAR---------- */
 
 .cnav {
-  background-color: rgba(40, 40, 40, 0.8);
+  background-color: var(--accent);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
   text-decoration: none;
@@ -216,7 +221,7 @@ body {
 }
 
 .dropdown-menu{
-    background-color: rgba(40, 40, 40, 0.8);
+    background-color: var(--accent);
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
 }
