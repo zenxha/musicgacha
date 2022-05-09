@@ -15,7 +15,7 @@ import java.util.*;
 
 @Controller
 public class RollController {
-    @GetMapping("/roll")
+    @GetMapping("/play")
     public String song(Model model) throws IOException, ParseException {
         //String web_server = "http://localhost:8080/";
 
@@ -23,7 +23,7 @@ public class RollController {
         model.addAttribute("character", c);
         System.out.println(c.getName());
         System.out.println(c.getOrigin());
-        System.out.println(c.getDescription());
+        System.out.println(c.getDescription()+"\n");
         return "homesite/roll";
 
     }
