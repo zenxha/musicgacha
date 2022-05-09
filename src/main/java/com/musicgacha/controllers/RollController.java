@@ -21,6 +21,8 @@ public class RollController {
 
         Roll c = new Roll("epic");
         model.addAttribute("character", c);
+        System.out.println(c.getName());
+        System.out.println(c.getOrigin());
         System.out.println(c.getDescription());
         return "homesite/roll";
 
