@@ -1,4 +1,5 @@
 package com.musicgacha.controllers;
+import com.musicgacha.data.Roll;
 import com.musicgacha.data.Song;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -18,28 +19,10 @@ public class RollController {
     public String song(Model model) throws IOException, ParseException {
         //String web_server = "http://localhost:8080/";
 
-        ArrayList<Song> lis = new ArrayList<>();
-
-
-        JSONParser parser = new JSONParser();
-        Object obj = parser.parse(new FileReader("src/main/resources/static/json/songs.json"));
-
-        JSONObject jsonObject = (JSONObject) obj;
-
-        for(Iterator iterator = jsonObject.keySet().iterator(); iterator.hasNext();) {
-            String key = (String) iterator.next();
-
-            // Song song = new Song();
-            JSONObject SongJSON = (JSONObject) jsonObject.get(key);
-            lis.add(new Song((String)SongJSON.get("trackTitle"), (String)SongJSON.get("artist"), (String)SongJSON.get("lyrics"), (String)SongJSON.get("spotify"), (String)SongJSON.get("youtube")));
-
-        }
-
-        // Printing song data in console
-        Song displaySong = lis.get((int) Math.floor(Math.random() * lis.size()));
-        System.out.println(displaySong.getTrackName() +" By "+ displaySong.getArtist() +"\nSpotify Link: "+ displaySong.getSpotifyUrl() + "\nYT Link: "+ displaySong.getYoutubeUrl()+"\n\n");
-        model.addAttribute("song", displaySong );
-        return "homesite/song";
+        Roll c = new Roll("epic");
+        model.addAttribute("character", c);
+        System.out.println(c.getDescription());
+        return "homesite/roll";
 
     }
 }
