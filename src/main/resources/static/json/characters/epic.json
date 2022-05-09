@@ -2,13 +2,13 @@
   "array": [
     {
       "name": "Yor",
-      "info": "UI, visual (in more ways than one) ",
+      "description": "UI, visual (in more ways than one) ",
       "origin": "SpyXFamily",
       "image": "https://static.wikia.nocookie.net/spy-x-family9171/images/8/8a/Yor_Forger_Portrait.png/revision/latest?cb=20211217082420"
     },
     {
       "name": "Anya",
-      "info": "Likes Peanuts ",
+      "description": "Likes Peanuts ",
       "origin": "SpyXFamily",
       "image": "https://c.tenor.com/VY_u6XxLLqgAAAAd/spy-x-family-spy-family.gif"
     }
