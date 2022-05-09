@@ -2,7 +2,7 @@
   "array": [
     {
       "name": "Yor Forger",
-      "description": "UI, visual (in more ways than one) ",
+      "description": "Hot mommy/wife by day, assassin by night",
       "origin": "SpyXFamily",
       "image": "https://files.catbox.moe/7zp8cp.png"
     },
@@ -17,6 +17,12 @@
       "description": "Always calm, the source of Toman's positivity",
       "origin": "Tokyo Revengers",
       "image": "https://files.catbox.moe/vgs3g4.jpg"
+    },
+    {
+      "name": "Levi Ackerman",
+      "description": "Always calm, has a sexy voice",
+      "origin": "Attack on Titan",
+      "image": "https://files.catbox.moe/vl12cu.jpg"
     }
   ]
 }
