@@ -16,7 +16,7 @@ public class Roll {
     private String name;
     private String origin;
     private String description;
-
+    private String rarity;
     public Roll(String rarity) throws IOException, ParseException {
         JSONParser parser = new JSONParser();
         Object obj = parser.parse(new FileReader("src/main/resources/static/json/characters/epic.json"));
@@ -24,7 +24,7 @@ public class Roll {
         JSONObject jsonObject = (JSONObject) obj;
         JSONArray arr = (JSONArray) jsonObject.get("array");
         JSONObject Roll = (JSONObject)arr.get((int) Math.floor(Math.random() * arr.size()));
-
+        this.rarity = rarity;
         this.image = (String)Roll.get("image");
         this.name = (String)Roll.get("name");
         this.origin = (String)Roll.get("origin");
@@ -40,4 +40,5 @@ public class Roll {
         return description;
     }
     public String getOrigin() { return origin;}
+    public String getRarity() { return rarity;}
 }
