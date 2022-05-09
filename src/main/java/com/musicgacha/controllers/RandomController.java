@@ -21,15 +21,15 @@ public class RandomController {
         //prototype array list, just used repeated elements to increase probability of each element
         ArrayList<String> rarity = new ArrayList<String>();
         for (int i = 0; i < 59; i++) {
-            rarity.add("Common");
+            rarity.add("Common"); //56%
         }
         for (int i = 0; i < 35; i++) {
-            rarity.add("Uncommon");
+            rarity.add("Uncommon"); //33.33%
         }
         for (int i = 0; i < 10; i++) {
-            rarity.add("Epic");
+            rarity.add("Epic"); //9.52%
         }
-        rarity.add("Legendary");
+        rarity.add("Legendary"); //0.95%
 
         //output list that will be displayed
         ArrayList<String> output = new ArrayList<String>();
