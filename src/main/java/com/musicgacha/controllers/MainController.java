@@ -27,10 +27,4 @@ public class MainController {
         return "base/blank"; // returns HTML VIEW (greeting)
 
     }
-
-    @GetMapping("/pong")
-    // CONTROLLER handles GET request for /greeting, maps it to greeting() and does variable bindings
-    public String pong() {
-        return "homesite/pingpong";
-    }
 }
