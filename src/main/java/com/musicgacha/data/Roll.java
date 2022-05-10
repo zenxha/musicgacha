@@ -19,7 +19,7 @@ public class Roll {
     private String rarity;
     public Roll(String rarity) throws IOException, ParseException {
         JSONParser parser = new JSONParser();
-        Object obj = parser.parse(new FileReader("src/main/resources/static/json/characters/epic.json"));
+        Object obj = parser.parse(new FileReader("src/main/resources/static/json/characters/"+rarity+".json"));
 
         JSONObject jsonObject = (JSONObject) obj;
         JSONArray arr = (JSONArray) jsonObject.get("array");

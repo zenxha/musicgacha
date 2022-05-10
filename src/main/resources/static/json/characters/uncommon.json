@@ -1,0 +1,22 @@
+{
+  "array": [
+    {
+      "name": "Armin Arlert",
+      "description":  "Eren Yeager and Mikasa Ackerman's best friend from childhood",
+      "origin": "Attack on Titan",
+      "image": "https://files.catbox.moe/f4lcqx.jpg"
+    },
+    {
+      "name": "Felix Argyle",
+      "description":  "Usually refers to himself in third person",
+      "origin": "Re:ZERO",
+      "image": "https://files.catbox.moe/ln6l9q.jpg"
+    },
+    {
+      "name": "Haku",
+      "description":  "Usually refers to himself in third person",
+      "origin": "Re:ZERO",
+      "image": "https://files.catbox.moe/ln6l9q.jpg"
+    }
+  ]
+}

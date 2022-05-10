@@ -23,11 +23,11 @@ public class RollController {
         String rarity = "";
         int number = (int) Math.floor(Math.random() * 10000);
         if(number > 3000) {rarity = "common";}
-        else if(number >1000) {rarity = "epic";}
-        else if(number > 200) {rarity = "ultra rare";}
+        else if(number >1000) {rarity = "uncommon";}
+        else if(number > 200) {rarity = "epic";}
         else if(number > 1) {rarity = "legendary";}
         else {rarity = "mythical";}
-        rarity = "epic";
+//        rarity = "epic";
         Roll c = new Roll(rarity);
         model.addAttribute("character", c);
         System.out.println(c.getName());
