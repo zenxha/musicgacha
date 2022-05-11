@@ -15,7 +15,7 @@ import java.util.*;
 
 @Controller
 public class RollController {
-    @GetMapping("/play")
+    @GetMapping("/rolltest")
     public String song(Model model) throws IOException, ParseException {
         //String web_server = "http://localhost:8080/";
 
@@ -35,5 +35,12 @@ public class RollController {
         System.out.println(c.getDescription()+"\n");
         return "homesite/roll";
 
+    }
+
+
+    @GetMapping("/play")
+    // CONTROLLER handles GET request for /greeting, maps it to greeting() and does variable bindings
+    public String play() {
+        return "homesite/play"; // returns HTML VIEW (greeting)
     }
 }

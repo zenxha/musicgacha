@@ -4,11 +4,32 @@
 
 <head><div layout:fragment="metadata" th:remove="tag">
     <title>Play</title>
+    <link rel="stylesheet" th:href="@{/css/play.css}">
 </div></head>
 
 <body><div layout:fragment="content" th:remove="tag"><div class="animation-region">
 
-<h1>Play</h1>
+<div class="timer-box">
+    <p class="open-title">open in...</p>
+    <p class="timer">00:00:00:00</p>
+</div>
 
-</div></div></body>
+
+
+<div class="birthday-gift">
+    <div class="gift">
+    <input id='click' type='checkbox'>
+    <label class='click' for='click'></label>
+         <div class="sparkles">
+        <div class="spark1"></div>
+        <div class="spark2"></div>
+        <div class="spark3"></div>
+        <div class="spark4"></div>
+        <div class="spark5"></div>
+        <div class="spark6"></div>
+      </div>
+      </div>
+  </div>
+
+<div></div></body>
 </html>
