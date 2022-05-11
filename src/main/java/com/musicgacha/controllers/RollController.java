@@ -1,6 +1,8 @@
 package com.musicgacha.controllers;
+import com.musicgacha.data.RandomRoll;
 import com.musicgacha.data.Roll;
 import com.musicgacha.data.Song;
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -16,7 +18,7 @@ import java.util.*;
 @Controller
 public class RollController {
     @GetMapping("/play")
-    public String song(Model model) throws IOException, ParseException {
+    public String play(Model model) throws IOException, ParseException {
         //String web_server = "http://localhost:8080/";
 
 
@@ -28,12 +30,37 @@ public class RollController {
         else if(number > 1) {rarity = "legendary";}
         else {rarity = "mythical";}
 //        rarity = "epic";
-        Roll c = new Roll(rarity);
+        RandomRoll c = new RandomRoll(rarity);
         model.addAttribute("character", c);
         System.out.println(c.getName());
         System.out.println(c.getOrigin());
         System.out.println(c.getDescription()+"\n");
         return "homesite/roll";
+
+    }
+
+
+    @GetMapping("/all")
+    public String all(Model model) throws IOException, ParseException {
+        //String web_server = "http://localhost:8080/";
+        Map<String, ArrayList<Roll>> database = new HashMap<String, ArrayList<Roll>>();
+        String[] rarities = {"common", "uncommon", "epic", "legendary"};
+        for(String x : rarities) {
+            JSONParser parser = new JSONParser();
+            Object obj = parser.parse(new FileReader("src/main/resources/static/json/characters/"+x+".json"));
+            ArrayList<Roll> cock = new ArrayList<>();
+            JSONObject jsonObject = (JSONObject) obj;
+            JSONArray arr = (JSONArray) jsonObject.get("array");
+            for(Object y: arr) {
+
+                Roll roll = new Roll((JSONObject)y, x );
+
+                cock.add(roll);
+            }
+            database.put(x, cock);
+        }
+        model.addAttribute("database", database);
+        return "homesite/all";
 
     }
 }

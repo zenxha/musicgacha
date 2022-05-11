@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{base/layout}" lang="en">
+
+<head><div layout:fragment="metadata" th:remove="tag">
+    <title>Play</title>
+</div></head>
+
+<body><div layout:fragment="content" th:remove="tag"><div class="animation-region">
+
+<h1>Possible Characters</h1>
+
+    <div th:each="rarityList : ${database}">
+        <h1 th:text="${rarityList.key}"></h1>
+        <div th:each="x : ${rarityList.value}">
+            <p th:text="${x.getName()}"></p>
+            <div class="card">
+                <img th:src="${x.getImage()}" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4 th:text="${x.getName()}"><b></b></h4>
+                    <p th:text="${x.getDescription()}"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+    </div>
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 40%;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .container {
+            padding: 2px 16px;
+        }
+    </style>
+
+</div></div></body>
+</html>
