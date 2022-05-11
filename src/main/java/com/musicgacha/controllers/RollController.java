@@ -1,4 +1,5 @@
 package com.musicgacha.controllers;
+import com.musicgacha.data.RandomRoll;
 import com.musicgacha.data.Roll;
 import com.musicgacha.data.Song;
 import org.json.simple.JSONArray;
