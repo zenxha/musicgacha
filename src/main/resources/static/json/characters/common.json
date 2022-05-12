@@ -8,11 +8,16 @@
     },
 
     {
-      "name": "Dorobō Neko Nami",
+      "name": "Neko Nami",
       "description": "Conquered the big ole sea and then got together with Luffy",
-      "origin": "Once Piece",
+      "origin": "One Piece",
       "image": "https://files.catbox.moe/f4tt99.png"
-
+    },
+    {
+      "name": "Edward Elric",
+      "description": "鋼の錬金術師 (Fullmetal Alchemist in English)",
+      "origin": "Fullmetal Alchemist",
+      "image": "https://files.catbox.moe/hvfeua"
     }
   ]
 }
