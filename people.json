@@ -1,0 +1,32 @@
+{
+  "mort": {
+    "name": "John Mortenson",
+    "strength": "100",
+    "intelligence": "100",
+    "codingAbility": "100"
+  },
+  "yeonjoon": {
+    "name": "Yeonjoon",
+    "strength": "5",
+    "intelligence": "2",
+    "codingAbility": "3"
+  },
+  "komay": {
+    "name": "Komay",
+    "strength": "70",
+    "intelligence": "80",
+    "codingAbility": "85"
+  },
+  "caleb": {
+    "name": "Caleb",
+    "strength": "75",
+    "intelligence": "70",
+    "codingAbility": "72"
+  },
+  "chris": {
+    "name": "Chris",
+    "strength": "80",
+    "intelligence": "70",
+    "codingAbility": "82"
+  }
+}

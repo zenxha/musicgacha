@@ -15,7 +15,7 @@ import java.util.Arrays;
 public class RandomController {
     @GetMapping("/random")
     // CONTROLLER handles GET request for /greeting, maps it to greeting() and does variable bindings
-    public String insert(@RequestParam(name = "rolls", required = false, defaultValue = "0") String rolls,
+    public String insert(@RequestParam(name = "rolls", required = false, defaultValue = "1") String rolls,
                          Model model) {
 
         //prototype array list, just used repeated elements to increase probability of each element
