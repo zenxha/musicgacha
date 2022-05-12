@@ -11,13 +11,15 @@
 <h1>Possible Characters</h1>
 
     <div class="row" th:each="rarityList : ${database}">
-        <h1 th:text="${rarityList.key}"></h1>
-        <div class="col-md-3" th:each="x : ${rarityList.value}">
-            <div class="card p-3 py-4 mt-5 mb-5">
-                <img th:src="${x.getImage()}" alt="Avatar" >
-                <div class="container">
-                    <h4 th:text="${x.getName()}"><b></b></h4>
-                    <p th:text="${x.getDescription()}"></p>
+        <div class="wrapper">
+            <h1 th:text="${rarityList.key}"></h1>
+            <div class="col-md-3" th:each="x : ${rarityList.value}">
+                <div class="card p-3 py-4 mt-5 mb-5">
+                    <img th:src="${x.getImage()}" alt="Avatar" >
+                    <div class="container">
+                        <h4 th:text="${x.getName()}"><b></b></h4>
+                        <p th:text="${x.getDescription()}"></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -39,6 +41,11 @@
 
         .container {
             padding: 2px 16px;
+        }
+        .wrapper {
+            border: 1px solid #dc4e41;
+            display: flex;
+            overflow-x: auto;
         }
     </style>
 
