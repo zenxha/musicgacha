@@ -1,6 +1,12 @@
 {
   "array": [
     {
+      "name": "Anya Forger",
+      "description":  "An orphan who becomes the makeshift daughter of an assassin and a spy. Likes peanuts.",
+      "origin": "Spy x Family",
+      "image": "https://files.catbox.moe/xj5e39.jpg"
+    },
+    {
       "name": "Armin Arlert",
       "description":  "Eren Yeager and Mikasa Ackerman's best friend from childhood",
       "origin": "Attack on Titan",

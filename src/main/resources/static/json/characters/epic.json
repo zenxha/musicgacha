@@ -1,16 +1,28 @@
 {
   "array": [
     {
-      "name": "Haku",
-      "description":  "An orphan, descendant of the Yuki clan",
-      "origin": "Naruto",
-      "image": "https://files.catbox.moe/fqwypl.jpg"
+      "name": "Rintarou Okabe",
+      "description":  "A moderately tall, self proclaimed mad scientist.",
+      "origin": "Steins;Gate",
+      "image": "https://files.catbox.moe/hz7zzj.jpg"
     },
     {
       "name": "Chihiro Fujisaki",
       "description":  "Usually refers to himself in third person",
       "origin": "Danganropa",
       "image": "https://files.catbox.moe/z1eqp4.jpg"
+    },
+    {
+      "name": "Yor Forger",
+      "description":  "Mommy waifu by day, assassin by night",
+      "origin": "Spy x Family",
+      "image": "https://files.catbox.moe/9j15fv.jpg"
+    },
+    {
+      "name": "Yui Hirasawa",
+      "description":  "Air-headed lead guitarist and vocalist of the band Ho-kago Tea Time",
+      "origin": "K-ON!",
+      "image": "https://files.catbox.moe/z2ntm3.jpg"
     }
   ]
 }
