@@ -95,6 +95,10 @@ h1{
 h3{
     font-size: 30px;
 }
+.sizer {
+    width: 300px;
+    text-align: center;
+}
 
 /* ---------ANIMATIONS---------- */
 
