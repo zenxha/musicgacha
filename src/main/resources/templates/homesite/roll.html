@@ -8,20 +8,24 @@
 </div></head>
 
 <body><div layout:fragment="content" th:remove="tag"><div class="animation-region">
-
-    <div class="card p-3 py-4 mt-5 mb-5" style="color: black;">
-        <img th:src="${character.getImage()}" alt="Avatar" >
-        <div class="container">
-            <h4 th:text="${character.getName()}"><b></b></h4>
-            <p th:text="${character.getDescription()}"></p>
-            <p th:text="${character.getOrigin()}"><b></b></p>
+    <div class="container">
+        <div class="card p-3 py-4 mt-5 mb-5" style="color: black;">
+            <img th:src="${character.getImage()}" alt="Avatar" >
+            <div class="container">
+                <h3 th:text="${character.getName()}"><b></b></h3>
+                <h4 th:text="${character.getRarity()}"></h4>
+                <p th:text="${character.getDescription()}"></p>
+                <p th:text="${character.getOrigin()}"><b></b></p>
+                <p>Sam please style this</p>
+            </div>
         </div>
     </div>
+
     <style>
         .card {
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
             transition: 0.3s;
-            width: 75%;
+            width: 50%;
         }
 
         .card:hover {
