@@ -16,7 +16,19 @@
       "name": "Loid Forger",
       "description": "Westalis' most prized spy",
       "origin": "Spy x Family",
-      "image": "https://files.catbox.moe/8pgf58.jpg"
+      "image": "https://files.catbox.moe/a34n0y.jpg"
+    },
+    {
+      "name": "Ayano Tateyama",
+      "description": "Anthony Vo's beloved",
+      "origin": "Kagerou Project",
+      "image": "https://files.catbox.moe/4wf9ts.jpg"
+    },
+    {
+      "name": "Himiko Toga",
+      "description": "Certified baddie",
+      "origin": "My Hero Academia",
+      "image": "https://files.catbox.moe/xjzrbg.png"
     }
   ]
 }
