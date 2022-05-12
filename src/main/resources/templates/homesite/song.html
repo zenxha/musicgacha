@@ -10,37 +10,38 @@
 
     <div class="container">
         <div class="jumbotron">
+            <h1 class="display-4" id="songtitle" th:utext="${song.getTrackName()}"></h1>
+            <p class="lead" id="songartist" th:utext="${song.getArtist()}"></p>
+            <hr class="my-4">
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" onclick="getSong()" role="button">New Song</a>
+                <a class="btn btn-warning btn-lg" href="api/random" role="button" target="_blank">API src</a>
+            </p>
             <div class="row">
+                <hr class="my-4">
+                <!-- 16:9 aspect ratio -->
                 <div class="col">
-                    <h1 class="display-4" id="songtitle" th:utext="${song.getTrackName()}"></h1>
-                    <p class="lead" id="songartist" th:utext="${song.getArtist()}"></p>
-                    <hr class="my-4">
-                    <p class="lead">
-                        <a class="btn btn-primary btn-lg" onclick="getSong()" role="button">New Song</a>
-                        <a class="btn btn-warning btn-lg" href="api/random" role="button" target="_blank">API src</a>
-                    </p>
-                    <p th:utext="${song.getLyrics}" id="lyrics"></p>
-
-                </div>
-                <div class="col">
-                    <h1 class="display-4">Song Data</h1>
-                    <div class="social-buttons mt-5">
-                         <a th:href="${song.getGoogle()}" id="googlelink" class="neo-button"><i class="fa fa-google a-1x"></i></a>
-                         <a th:attr="href=${song.getSpotifyUrl()}" id="spotifylink" class="neo-button"><i class="fa fa-spotify fa-1x"></i></a>
-                         <a th:href="${song.getYoutubeUrl()}" id="youtubelink" class="neo-button"><i class="fa fa-youtube fa-1x"></i></a>
-                    </div>
-                    <hr class="my-4">
-                    <!-- 16:9 aspect ratio -->
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe id="youtubeembed" class="embed-responsive-item"   th:attr="src=${song.getYoutubeEmbed()}"></iframe>
                     </div>
-                    <hr class="my-4">
+                </div>
+                <div class="col">
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe id="spotifyembed" th:attr="src=${song.getSpotifyEmbed()}" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="social-buttons mt-5">
+                    <a th:href="${song.getGoogle()}" id="googlelink" class="neo-button"><i class="fa fa-google a-1x"></i></a>
+                    <a th:attr="href=${song.getSpotifyUrl()}" id="spotifylink" class="neo-button"><i class="fa fa-spotify fa-1x"></i></a>
+                    <a th:href="${song.getYoutubeUrl()}" id="youtubelink" class="neo-button"><i class="fa fa-youtube fa-1x"></i></a>
+                </div>
+            </div>
+
         </div>
+
+
     </div>
 
     <!-- End of body content specific to page -->
@@ -56,7 +57,7 @@
                     console.log(res);
                     document.getElementById("songtitle").innerText=res.trackName;
                     document.getElementById("songartist").innerHTML=res.artist;
-                    document.getElementById("lyrics").innerHTML=res.lyrics;
+                    // document.getElementById("lyrics").innerHTML=res.lyrics;
                     document.getElementById("googlelink").href=res.google;
                     document.getElementById("spotifylink").href=res.spotifyUrl;
                     document.getElementById("youtubelink").href=res.youtubeUrl;
