@@ -11,4 +11,4 @@
 ## Master Plan
 - Plans and progressions [breakdown](https://docs.google.com/drawings/d/1J8H0ygz2QkCI40XRQpPd7W-9kpfUwOEN2dKYtuCUNqI/edit)
 ## Sponsor Verification Message
-![Verified]()
+![Verified](https://files.catbox.moe/tby78o.png)
