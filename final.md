@@ -9,6 +9,7 @@
 |Allen|Scrum Master|[Week 1](https://github.com/zenxha/musicgacha/issues/33) [Week 2]() [Week 3]()|
 
 ## Master Plan
+![13 Day Plan](https://files.catbox.moe/gure61.png)
 - Plans and progressions [breakdown](https://docs.google.com/drawings/d/1J8H0ygz2QkCI40XRQpPd7W-9kpfUwOEN2dKYtuCUNqI/edit)
 ## Sponsor Verification Message
 ![Verified](https://files.catbox.moe/tby78o.png)
