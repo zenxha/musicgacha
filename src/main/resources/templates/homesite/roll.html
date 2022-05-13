@@ -4,19 +4,25 @@
 
 <head><div layout:fragment="metadata" th:remove="tag">
     <title>How to Play</title>
-    <link rel="stylesheet" th:href="@{css/howToPlay.css}">
+    <link rel="stylesheet" th:href="@{css/cards.css}">
 </div></head>
 
 <body><div layout:fragment="content" th:remove="tag"><div class="animation-region">
     <div class="container">
-        <div class="card p-3 py-4 mt-5 mb-5" style="color: black;">
-            <img th:src="${character.getImage()}" alt="Avatar" >
-            <div class="container">
-                <h3 th:text="${character.getName()}"><b></b></h3>
-                <h4 th:text="${character.getRarity()}"></h4>
-                <p th:text="${character.getDescription()}"></p>
-                <p th:text="${character.getOrigin()}"><b></b></p>
-                <p>Sam please style this</p>
+        <div class="flip-card" style="color: black;">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img th:src="${character.getImage()}" alt="Avatar" >
+                </div>
+                <div class="flip-card-back" th:classappend="${character.getRarity()+'b'}">
+                    <div class="container">
+                        <h3 th:text="${character.getName()}"><b></b></h3>
+                        <h4 th:text="${character.getRarity()}"></h4>
+                        <p th:text="${character.getDescription()}"></p>
+                        <p th:text="${character.getOrigin()}"><b></b></p>
+                        <p>Sam please style this</p>
+                    </div>
+            </div>
             </div>
         </div>
     </div>
