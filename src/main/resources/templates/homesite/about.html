@@ -107,11 +107,11 @@
 
 const expand = (number) => {
     var x = $("#arrow"+number)[0];
-    const arrowName = x.className == "arrow-expanded" ? 'arrow' : 'arrow-expanded';
+    const arrowName = x.className === "arrow-expanded" ? 'arrow' : 'arrow-expanded';
     x.classname = arrowName;
 
     var y = $("#text"+number)[0];
-    const textName = y.className == 'text-expanded' ? 'text' : 'text-expanded';
+    const textName = y.className === 'text-expanded' ? 'text' : 'text-expanded';
     y.className = textName;
 
 }

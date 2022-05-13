@@ -111,12 +111,25 @@
     "spotify": "6z1kLsntE7FuzKZHZWrXYN",
     "youtube": "wKyMIrBClYw"
   },
-
-  "Nothing": {
+  "nothing": {
     "trackTitle": " Nothing ",
     "artist": "Bruno Major",
     "lyrics": "",
-    "spotify": "",
+    "spotify": "2IAR0DziHCjSu16gR4ihvy",
     "youtube":"ucRVDoFkcxc"
+  },
+  "ganadara": {
+    "trackTitle": " Ganadara ",
+    "artist": "Jay Park",
+    "lyrics": "",
+    "spotify": "5quFr5s5PXYfUX5jV2EBZ1",
+    "youtube":"gFb1TftvdoM"
+  },
+  "somebody": {
+    "trackTitle": "Somebody",
+    "artist": "Keshi",
+    "lyrics": "",
+    "spotify": "0HeiYo9WwMT8ujirrWzarf",
+    "youtube":"uV2yMgh85qU"
   }
 }
