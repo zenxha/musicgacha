@@ -18,6 +18,7 @@
                     <img th:src="${x.getImage()}" alt="Avatar" >
                     <div class="container">
                         <h4 th:text="${x.getName()}"><b></b></h4>
+                        <p th:class="${x.getRarity}" th:text="${x.getRarity()}"></p>
                         <p th:text="${x.getDescription()}"></p>
                         <p th:text="${x.getOrigin()}"><b></b></p>
                     </div>
@@ -52,6 +53,15 @@
             border: 1px solid #dc4e41;
             display: flex;
             overflow-x: auto;
+        }
+        .uncommon {
+            color: #7FFFD4;
+        }
+        .epic {
+            color: #ff1493;
+        }
+        .legendary {
+            color: #8A2BE2;
         }
     </style>
 
