@@ -5,6 +5,7 @@
 <head><div layout:fragment="metadata" th:remove="tag">
     <title>About Us</title>
     <link rel="stylesheet" th:href="@{/css/about.css}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </div></head>
 
 <body><div layout:fragment="content" th:remove="tag"><div class="animation-region">
@@ -20,7 +21,7 @@
             <p>Allen Xu</p>
             <p>Scrum Leader</p>
         </div>
-        <button type="button" class="arrow" id="arrow1" onclick="expand1()"></button> <!-- dropdown arrow button -->
+        <button type="button" class="arrow" id="arrow1" onclick="expand('1')"></button> <!-- dropdown arrow button -->
     </div>
     <p class="text" id="text1">
         <a href="https://github.com/purplebears321">GitHub Profile</a><br>
@@ -35,7 +36,7 @@
             <p>Deployment Manager</p>
         </div>
         <p class="text"></p>
-        <button type="button" class="arrow" id="arrow2" onclick="expand2()"></button>
+        <button type="button" class="arrow" id="arrow2" onclick="expand('2')"></button>
     </div>
     <p class="text" id="text2">
         <a href="https://github.com/Chris-Ru">GitHub Profile</a><br>
@@ -50,7 +51,7 @@
             <p>Backend</p>
         </div>
         <p class="text"></p>
-        <button type="button" class="arrow" id="arrow3" onclick="expand3()"></button>
+        <button type="button" class="arrow" id="arrow3" onclick="expand('3')"></button>
     </div>
     <p class="text" id="text3">
         <a href="https://github.com/zenxha">GitHub Profile</a><br>
@@ -65,7 +66,7 @@
             <p>Frontend / Design</p>
         </div>
         <p class="text"></p>
-        <button type="button" class="arrow" id="arrow4" onclick="expand4()"></button>
+        <button type="button" class="arrow" id="arrow4" onclick="expand('4')"></button>
     </div>
     <p class="text" id="text4">
         <a href="https://github.com/samkoenig9">GitHub Profile</a><br>
@@ -80,7 +81,7 @@
             <p>GitHub Admin</p>
         </div>
         <p class="text"></p>
-        <button type="button" class="arrow" id="arrow5" onclick="expand5()"></button>
+        <button type="button" class="arrow" id="arrow5" onclick="expand('5')"></button>
     </div>
     <p class="text" id="text5">
         <a href="https://github.com/calebkimsd">GitHub Profile</a><br>
@@ -95,7 +96,7 @@
             <p>Project Sponsor</p>
         </div>
         <p class="text"></p>
-        <button type="button" class="arrow" id="arrow6" onclick="expand6()"></button>
+        <button type="button" class="arrow" id="arrow6" onclick="expand('6')"></button>
     </div>
     <p class="text" id="text6">
         <a href="https://zenxha.github.io/musicgacha/sponsor">Sponsor Objectives</a><br>
@@ -104,94 +105,15 @@
 
 <script>
 
-function expand1() { //javascript functionality for each dropdown button
-    var x = document.getElementById("arrow1");
-    if (x.className == "arrow-expanded") {
-        x.className = "arrow";
-    } else {
-        x.className = "arrow-expanded";
-    }
-    var x = document.getElementById("text1");
-    if (x.className == "text-expanded") {
-        x.className = "text";
-    } else {
-        x.className = "text-expanded";
-    }
-}
+const expand = (number) => {
+    var x = $("#arrow"+number)[0];
+    const arrowName = x.className == "arrow-expanded" ? 'arrow' : 'arrow-expanded';
+    x.classname = arrowName;
 
-function expand2() {
-    var x = document.getElementById("arrow2");
-    if (x.className == "arrow-expanded") {
-        x.className = "arrow";
-    } else {
-        x.className = "arrow-expanded";
-    }
-    var x = document.getElementById("text2");
-    if (x.className == "text-expanded") {
-        x.className = "text";
-    } else {
-        x.className = "text-expanded";
-    }
-}
+    var y = $("#text"+number)[0];
+    const textName = y.className == 'text-expanded' ? 'text' : 'text-expanded';
+    y.className = textName;
 
-function expand3() {
-    var x = document.getElementById("arrow3");
-    if (x.className == "arrow-expanded") {
-        x.className = "arrow";
-    } else {
-        x.className = "arrow-expanded";
-    }
-    var x = document.getElementById("text3");
-    if (x.className == "text-expanded") {
-        x.className = "text";
-    } else {
-        x.className = "text-expanded";
-    }
-}
-
-function expand4() {
-    var x = document.getElementById("arrow4");
-    if (x.className == "arrow-expanded") {
-        x.className = "arrow";
-    } else {
-        x.className = "arrow-expanded";
-    }
-    var x = document.getElementById("text4");
-    if (x.className == "text-expanded") {
-        x.className = "text";
-    } else {
-        x.className = "text-expanded";
-    }
-}
-
-function expand5() {
-    var x = document.getElementById("arrow5");
-    if (x.className == "arrow-expanded") {
-        x.className = "arrow";
-    } else {
-        x.className = "arrow-expanded";
-    }
-    var x = document.getElementById("text5");
-    if (x.className == "text-expanded") {
-        x.className = "text";
-    } else {
-        x.className = "text-expanded";
-    }
-}
-
-function expand6() {
-    var x = document.getElementById("arrow6");
-    if (x.className == "arrow-expanded") {
-        x.className = "arrow";
-    } else {
-        x.className = "arrow-expanded";
-    }
-    var x = document.getElementById("text6");
-    if (x.className == "text-expanded") {
-        x.className = "text";
-    } else {
-        x.className = "text-expanded";
-    }
 }
 
 </script>
