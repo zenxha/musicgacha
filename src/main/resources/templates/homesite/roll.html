@@ -12,7 +12,7 @@
         <div class="flip-card" style="color: black;">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img th:src="${character.getImage()}" alt="Avatar" >
+                    <img th:src="${character.getImage()}" height="300" >
                 </div>
                 <div class="flip-card-back" th:classappend="${character.getRarity()+'b'}">
                     <div class="container">
