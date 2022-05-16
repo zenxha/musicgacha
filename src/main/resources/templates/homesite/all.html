@@ -15,11 +15,11 @@
         <div class="wrapper">
             <h1 th:text="${rarityList.key}" style="margin-bottom: 15%;"> </h1>
             <div class="col-md-3" th:each="x : ${rarityList.value}">
-                <div class="card p-3 py-4 mt-5 mb-5" style="color: black;">
-                    <img th:src="${x.getImage()}" alt="Avatar" >
+                <div th:classappend="${x.getRarity()+'-border'}"class="card p-3 py-4 mt-5 mb-5" style="color: white;">
+                    <img class="card-img" th:src="${x.getImage()}" alt="Avatar" >
                     <div class="container">
                         <h4 th:text="${x.getName()}"><b></b></h4>
-                        <p th:class="${x.getRarity}" th:text="${x.getRarity()}"></p>
+                        <p th:class="${x.getRarity}" th:text="${x.getRarity()}" style="text-transform: uppercase;"></p>
                         <p th:text="${x.getDescription()}"></p>
                         <p th:text="${x.getOrigin()}"><b></b></p>
                     </div>
