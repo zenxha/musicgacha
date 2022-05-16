@@ -35,7 +35,7 @@ public class RollController {
 //        rarity = "epic";
         RandomRoll c = new RandomRoll(rarity);
         model.addAttribute("character", c);
-        c.getKey();
+
         return "homesite/roll";
 
     }
@@ -53,9 +53,7 @@ public class RollController {
             JSONObject jsonObject = (JSONObject) obj;
             JSONArray arr = (JSONArray) jsonObject.get("array");
             for(Object y: arr) {
-
                 Roll roll = new Roll((JSONObject)y, x );
-
                 cock.add(roll);
             }
             database.put(x, cock);
