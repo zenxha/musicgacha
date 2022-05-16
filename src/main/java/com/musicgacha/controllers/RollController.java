@@ -35,9 +35,7 @@ public class RollController {
 //        rarity = "epic";
         RandomRoll c = new RandomRoll(rarity);
         model.addAttribute("character", c);
-        System.out.println(c.getName());
-        System.out.println(c.getOrigin());
-        System.out.println(c.getDescription()+"\n");
+        c.getKey();
         return "homesite/roll";
 
     }

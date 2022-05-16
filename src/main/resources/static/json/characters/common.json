@@ -2,40 +2,46 @@
   "array": [
     {
       "name": "Sakura Haruno",
-      "description": "Got pregnant in June, when she was 20",
+      "description": "Pregnant at age 20 :O",
       "origin": "Naruto",
-      "image": "https://files.catbox.moe/us74p0.jpg"
+      "image": "https://files.catbox.moe/us74p0.jpg",
+      "key": "0aaa"
     },
 
     {
       "name": "Neko Nami",
       "description": "Conquered the big ole sea and then got together with Luffy",
       "origin": "One Piece",
-      "image": "https://files.catbox.moe/f4tt99.png"
+      "image": "https://files.catbox.moe/f4tt99.png",
+      "key": "0aab"
     },
     {
       "name": "Edward Elric",
       "description": "鋼の錬金術師 (Fullmetal Alchemist in English)",
       "origin": "Fullmetal Alchemist",
-      "image": "https://files.catbox.moe/hvfeua"
+      "image": "https://files.catbox.moe/hvfeua",
+      "key": "0aac"
     },
     {
       "name": "Zenitsu Agatsuma",
       "description": "An absolute bot until he falls asleep...",
       "origin": "Demon Slayer",
-      "image": "https://files.catbox.moe/b7vwsg"
+      "image": "https://files.catbox.moe/b7vwsg",
+      "key": "0aad"
     },
     {
       "name": "Hitch Dreyse",
       "description": "Stationed in Stohess District",
       "origin": "Attack on Titan",
-      "image": "https://files.catbox.moe/44o0ap.png"
+      "image": "https://files.catbox.moe/44o0ap.png",
+      "key": "0aae"
     },
     {
       "name": "Mikasa Ackerman",
       "description": "If only she was my mom",
       "origin": "Attack on Titan",
-      "image": "https://files.catbox.moe/38fc1h.jpg"
+      "image": "https://files.catbox.moe/38fc1h.jpg",
+      "key": "0aaf"
     }
 
   ]
