@@ -33,8 +33,8 @@
                     https://getbootstrap.com/docs/4.0/components/forms/#readonly-plain-text
              -->
             <!--Read Only Section -->
-            <h3 th:text="'ID: ' + ${person.id}"></h3>
-            <table>
+            <h3 style="color: black;" th:text="'ID: ' + ${person.id}"></h3>
+            <table style="color: black;">
               <tr th:if="${person.roles.empty}">
                 <td colspan="2"> NoRoles </td>
               </tr>
@@ -43,9 +43,9 @@
               </tr>
             </table>
             <!--Update Form -->
-            <form class="form-inline" action="#" th:action="@{/database/personupdate}" th:object="${person}" method="POST">
+            <form class="form-inline" action="#" th:action="@{/database/personupdate}" th:object="${person}" method="POST" style="color: black;">
               <!-- Hidden Section, stuff we need to reference to preserve on Update -->
-              <div class="form-group mb-2 mr-sm-2">
+              <div class="form-group mb-2 mr-sm-2" style="color:black">
                 <label for="id" hidden></label>
                 <input type="text" th:field="*{id}" id="id" hidden class="form-control-plaintext" >
                 <label for="roles" hidden></label>
