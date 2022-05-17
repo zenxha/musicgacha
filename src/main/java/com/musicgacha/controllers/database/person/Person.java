@@ -55,6 +55,8 @@ public class Person {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date dob;
 
+
+
     // Initializer used when setting database from an API
     public Person(String email, String password, String name, Date dob, Role role) {
         this.email = email;
