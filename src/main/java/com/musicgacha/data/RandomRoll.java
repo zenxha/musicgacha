@@ -16,7 +16,7 @@ public class RandomRoll {
     private String name;
     private String origin;
     private String description;
-    private String rarity;
+    private String rarity, key;
     public RandomRoll(String rarity) throws IOException, ParseException {
         JSONParser parser = new JSONParser();
         Object obj = parser.parse(new FileReader("src/main/resources/static/json/characters/"+rarity+".json"));
@@ -29,6 +29,7 @@ public class RandomRoll {
         name = (String)Roll.get("name");
         origin = (String)Roll.get("origin");
         description = (String)Roll.get("description");
+        key = (String)Roll.get("key");
     }
     public String getImage() {
         return image;
@@ -39,4 +40,5 @@ public class RandomRoll {
     public String getDescription() { return description; }
     public String getOrigin() { return origin;}
     public String getRarity() { return rarity;}
+    public String getKey() { return key;}
 }

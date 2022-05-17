@@ -69,3 +69,41 @@
 .legendaryb {
     background-color: #8A2BE2;
 }
+
+
+
+.card{
+    background-color: var(--accent);
+    border-radius: 25px;
+}
+
+.common-border{
+    border: solid 4px #e9c46a;
+}
+
+.uncommon-border{
+    border: solid 4px #7FFFD4;
+}
+
+.epic-border{
+    border: solid 4px #ff1493;
+}
+
+.legendary-border{
+    border: solid 4px #8A2BE2;
+}
+
+.mythical-border{
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+}
+
+.card-img{
+    border-radius: 20px;
+    padding: 0 5px 10px 5px;
+}
+
+.row{
+    width: 100%;
+}

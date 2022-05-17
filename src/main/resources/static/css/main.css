@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
 :root{
-    --darkgray: rgba(40, 40, 40, 0.8);
     --accent:  rgba(40, 40, 40, 0.8);
     --darkaccent: rgba(21, 21, 21, 0.8);
 }

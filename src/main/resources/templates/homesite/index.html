@@ -18,14 +18,12 @@
             <h3>Select an Option</h3>
             <div class="sizer">
 <!--                how do i center this shit lmAO-->
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe id="youtubeembed" class="embed-responsive-item"   th:attr="src=${song.getYoutubeEmbed()}"></iframe>
-                </div>
+
             </div>
 
         </div>
         <div class="right">
-            <div onclick="location.href='/play';" class="grid-1 box top-box">
+            <div onclick="location.href='/roll';" class="grid-1 box top-box">
                 <p class="box-text">PLAY</p>
             </div>
             <div onclick="location.href='/inventory';" class="grid-2 box top-box">
@@ -35,7 +33,9 @@
                 <p class="box-text">HOW TO PLAY</p>
             </div>
             <div onclick="location.href='/about';" class="grid-4 box bottom-box">
-                <p class="box-text">ABOUT US</p>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe id="youtubeembed" class="embed-responsive-item"   th:attr="src=${song.getYoutubeEmbed()}"></iframe>
+                </div>
             </div>
         </div>
     </div>
