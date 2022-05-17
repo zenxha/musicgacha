@@ -19,7 +19,6 @@ import java.util.*;
 public class RollController {
     @Autowired
     Chae chae = new Chae();
-
     public RollController() throws Exception {
     }
 
@@ -36,11 +35,9 @@ public class RollController {
         else if(number > 1) {rarity = "legendary";}
         else {rarity = "mythical";}
         if(!r.equals("")){rarity = r;}
-//        rarity = "epic";
-        RandomRoll c = new RandomRoll(rarity);
+//        RandomRoll c = new RandomRoll(rarity);
 
         model.addAttribute("character", chae.getRandom(rarity));
-
         return "homesite/roll";
 
     }
@@ -48,10 +45,7 @@ public class RollController {
 
     @GetMapping("/all")
     public String all(Model model) throws Exception {
-        //String web_server = "http://localhost:8080/";
-        Chae chae = new Chae();
         model.addAttribute("database", chae.queryAll());
         return "homesite/all";
-
     }
 }

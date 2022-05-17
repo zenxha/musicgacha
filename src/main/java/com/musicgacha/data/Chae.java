@@ -18,7 +18,7 @@ import java.util.Map;
 
 @Component
 public class Chae {
-    private Map<String, ArrayList<Roll>> database = new HashMap<String, ArrayList<Roll>>();
+    private Map<String, ArrayList<Roll>> database = new HashMap<>();
     public Chae() throws Exception {
 
         String[] rarities = {"common", "uncommon", "epic", "legendary", "mythical"};
@@ -35,8 +35,6 @@ public class Chae {
             } catch(IOException e) {
                 throw new Exception("oops");
             }
-
-
 
             for(Object y: arr) {
                 Roll roll = new Roll((JSONObject)y, x );
