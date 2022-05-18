@@ -14,11 +14,12 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 @Component
 public class Chae {
-    private Map<String, ArrayList<Roll>> database = new HashMap<>();
+    private Map<String, ArrayList<Roll>> database = new LinkedHashMap<>();
     public Chae() throws Exception {
 
         String[] rarities = {"common", "uncommon", "epic", "legendary", "mythical"};
