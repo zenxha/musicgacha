@@ -18,10 +18,11 @@
                     <div th:classappend="${x.getRarity()+'-border'}"class="card p-3 py-4 mt-5 mb-5" style="color: white;">
                         <img class="card-img" th:src="${x.getImage()}" alt="Avatar" >
                         <div>
-                            <h4 th:text="${x.getName()}"><b></b></h4>
+                            <a th:href="@{'/characters/'+${x.getID()}}"><h4 th:text="${x.getName()}"></h4></a>
                             <p th:class="${x.getRarity}" th:text="${x.getRarity()}" style="text-transform: uppercase;"></p>
                             <p th:text="${x.getDescription()}"></p>
                             <p th:text="${x.getOrigin()}"><b></b></p>
+                            <p th:text="${'ID: '+ x.getID()}"></p>
                         </div>
                     </div>
                 </div>

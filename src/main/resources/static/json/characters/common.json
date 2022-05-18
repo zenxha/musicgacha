@@ -12,7 +12,7 @@
       "name": "Neko Nami",
       "description": "Conquered the big ole sea and then got together with Luffy",
       "origin": "One Piece",
-      "image": "https://files.catbox.moe/x4rocr.jpg"
+      "image": "https://files.catbox.moe/x4rocr.jpg",
       "ID": "0aab"
     },
     {
@@ -42,6 +42,13 @@
       "origin": "Attack on Titan",
       "image": "https://files.catbox.moe/38fc1h.jpg",
       "ID": "0aaf"
+    },
+    {
+      "name": "Sylvia Sherwood",
+      "description":  "Alias: Handler",
+      "origin": "Spy x Family",
+      "image": "https://i.imgur.com/LCs7PVY.png",
+      "ID": "0aag"
     }
 
   ]
