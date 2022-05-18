@@ -1,3 +1,44 @@
+html,body {
+    overflow-x:hidden;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: var(--accent);
+    border-radius: 25px;
+    height: auto;
+    margin-top: 80px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.05);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.card-img{
+    border-radius: 20px;
+    padding: 0 5px 10px 5px;
+}
+
+.row{
+    width: 100%;
+    height: auto;
+    margin: 30px auto 30px auto;
+    background-color: var(--blueaccent);
+    padding: 50px 20px 20px 20px;
+    border-radius: 20px;
+}
+
+.wrapper {
+    display: flex;
+    overflow-x: auto;
+}
+
 .flip-card {
     background-color: transparent;
     width: 300px;
@@ -70,11 +111,15 @@
     background-color: #8A2BE2;
 }
 
+.mythical {
+    background-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
 
-
-.card{
-    background-color: var(--accent);
-    border-radius: 25px;
+.mythicalb {
+    background-color: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
 }
 
 .common-border{
@@ -99,11 +144,21 @@
     border-image-slice: 1;
 }
 
-.card-img{
-    border-radius: 20px;
-    padding: 0 5px 10px 5px;
+  
+div::-webkit-scrollbar-track {
+    border-radius: 100px;
+    background-color: #111c3a;
+}
+  
+div::-webkit-scrollbar {
+    width: 100%;
 }
 
-.row{
-    width: 100%;
+div::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #1f468e;
+}
+
+div::-webkit-scrollbar-thumb:hover {
+    background-color: #1b3d7c;
 }

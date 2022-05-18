@@ -26,6 +26,7 @@ body{
     outline: 5px solid #0a1427;
     outline-offset: -10px;
     left: 50%;
+    border-radius: 10px;
 }
 
 .splitter{
@@ -35,20 +36,19 @@ body{
     margin-bottom: 20px;
     width: 90%;
     height: 5px;
-    background-color: rgb(21, 30, 78);
+    background-color: var(--blueaccent);
 }
 
 .person{
     height: auto;
     padding-left: 150px;;
-    padding-top: 10px;
     padding-bottom: 0px;
     display: flex;
     align-items: center;
 }
 
 .img-person{
-    border-radius: 1000px;
+    border-radius: 50px;
     float: left;
 }
 
