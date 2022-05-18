@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import com.musicgacha.data.Song;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.io.FileReader;
@@ -47,5 +48,11 @@ public class RollController {
     public String all(Model model) throws Exception {
         model.addAttribute("database", chae.queryAll());
         return "homesite/all";
+    }
+
+    @GetMapping("/characters/{id}")
+    public String character(@PathVariable("id") String id, Model model) {
+        model.addAttribute("character", chae.getByID(id));
+        return "homesite/character";
     }
 }
