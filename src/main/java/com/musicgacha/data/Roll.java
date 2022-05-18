@@ -16,14 +16,14 @@ public class Roll {
     private String name;
     private String origin;
     private String description;
-    private String rarity, key;
+    private String rarity, ID;
     public Roll(JSONObject r, String rarity)  {
         this.rarity = rarity;
         image = (String)r.get("image");
         name = (String)r.get("name");
         origin = (String)r.get("origin");
         description = (String)r.get("description");
-        key = (String)r.get("key");
+        ID = (String)r.get("ID");
     }
     public String getImage() {
         return image;
@@ -34,5 +34,5 @@ public class Roll {
     }
     public String getOrigin() { return origin;}
     public String getRarity() { return rarity;}
-    public String getKey() { return key;}
+    public String getID() { return ID;}
 }
