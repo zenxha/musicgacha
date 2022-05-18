@@ -4,20 +4,22 @@
       "name": "Wonyoung Jang",
       "description":  "uhhh shes very pretty",
       "origin": "IVE",
-      "image": "https://files.catbox.moe/vbzmck.jpg"
+      "image": "https://files.catbox.moe/vbzmck.jpg",
+      "ID": "4aaa"
     },
     {
     "name": "Sana Minatozaki",
     "description":  "Scouted in a shopping mall in Japan",
     "origin": "TWICE",
-    "image": "https://files.catbox.moe/roz2ek.jpg"
-
+    "image": "https://files.catbox.moe/roz2ek.jpg",
+      "ID": "4aaab"
     },
     {
     "name": "Da Baby",
     "description": "Let's Goooooo",
     "origin": "God's Gift",
-    "image": "https://media.pitchfork.com/photos/5c7d4c1b4101df3df85c41e5/1:1/w_450%2Cc_limit/Dababy_BabyOnBaby.jpg"
+    "image": "https://media.pitchfork.com/photos/5c7d4c1b4101df3df85c41e5/1:1/w_450%2Cc_limit/Dababy_BabyOnBaby.jpg",
+      "ID": "4aac"
     }
   ]
 }

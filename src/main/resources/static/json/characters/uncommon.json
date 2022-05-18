@@ -4,37 +4,43 @@
       "name": "Anya Forger",
       "description":  "An orphan who becomes the makeshift daughter of an assassin and a spy. Likes peanuts.",
       "origin": "Spy x Family",
-      "image": "https://files.catbox.moe/xj5e39.jpg"
+      "image": "https://files.catbox.moe/xj5e39.jpg",
+      "ID": "1aaa"
     },
     {
       "name": "Armin Arlert",
       "description":  "Eren Yeager and Mikasa Ackerman's best friend from childhood",
       "origin": "Attack on Titan",
-      "image": "https://files.catbox.moe/f4lcqx.jpg"
+      "image": "https://files.catbox.moe/f4lcqx.jpg",
+      "ID": "1aab"
     },
     {
       "name": "Felix Argyle",
       "description":  "Usually refers to himself in third person",
       "origin": "Re:ZERO",
-      "image": "https://files.catbox.moe/ln6l9q.jpg"
+      "image": "https://files.catbox.moe/ln6l9q.jpg",
+      "ID": "1aac"
     },
     {
       "name": "Haku",
       "description":  "UHHH SOMEONE PUT INFO HERE PLS",
       "origin": "Naruto",
-      "image": "https://files.catbox.moe/ldp645.jpg"
+      "image": "https://files.catbox.moe/ldp645.jpg",
+      "ID": "1aad"
     },
     {
       "name": "Sōji Mitsuka",
       "description":  "Transorms himself into a petite 4'2 girl",
       "origin": "Ore, Twintail ni Narimasu.",
-      "image": "https://files.catbox.moe/dh2a7f.png"
+      "image": "https://files.catbox.moe/dh2a7f.png",
+      "ID": "1aae"
     },
     {
       "name": "Hideri Kanzaki",
       "description":  "Transorms himself into a petite 4'2 girl",
       "origin": "Ore, Twintail ni Narimasu.",
-      "image": "https://files.catbox.moe/eoy58l.jpg"
+      "image": "https://files.catbox.moe/eoy58l.jpg",
+      "ID": "1aaf"
     }
 
   ]
