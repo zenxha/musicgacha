@@ -19,6 +19,20 @@
         <h2 th:text="${person.name} + '\'s bio'"></h2>
         <hr>
         <!--Notes input form, textarea supports multiple lines of input  -->
+        <div class="row align-items-md-stretch">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>ID</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="person : ${list}">
+              <td th:text="${person.id}">Person ID</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
         <form class="form-inline" action="#" th:action="@{/database/notes}" th:object="${note}" method="POST">
           <table class="table">
             <thead>
@@ -37,12 +51,13 @@
             </tr>
             <tr>
               <td><textarea rows = "5" cols = "100%" th:field="*{text}" id="text" required></textarea></td>
-              <td><input type="submit" value="Add" ></td>
+              <td><input type="submit" value="Update!" ></td>
             </tr>
             </tbody>
           </table>
         </form>
         <hr>
+
 
 
         <div class="table-responsive">
