@@ -5,11 +5,21 @@
 <head><div layout:fragment="metadata" th:remove="tag">
     <title>How to Play</title>
     <link rel="stylesheet" th:href="@{css/cards.css}">
+    <link rel="stylesheet" th:href="@{css/roll.css}">
 </div></head>
-
 <body><div layout:fragment="content" th:remove="tag"><div class="animation-region">
     <div class="container">
-        <div class="flip-card" style="color: black;">
+
+        </br>
+        <div class="slat" style="text-align: center">
+            <p style="font-size: 50px;"><strong>HOVER</strong> to View Information</p>
+        </div>
+
+        </br>
+        </br>
+        </br>
+
+        <div class="flip-card" style="color: black; text-align: center">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img th:src="${character.getImage()}" height="300" >
@@ -20,32 +30,18 @@
                         <h4 th:text="${character.getRarity()}"></h4>
                         <p th:text="${character.getDescription()}"></p>
                         <p th:text="${character.getOrigin()}"><b></b></p>
-                        <p>Sam please style this</p>
                     </div>
             </div>
             </div>
         </div>
+        </br>
+        </br>
+        <button class="click" onClick="window.location.reload();">New Character!</button>
 <!--
         <a th:href="@{/database/notes/{id}(id = ${person.id})}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Add to Inventory</a>
 -->
     </div>
 
-
-    <style>
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            transition: 0.3s;
-            width: 50%;
-        }
-
-        .card:hover {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        }
-
-        .container {
-            padding: 2px 16px;
-        }
-    </style>
 
 </div></div></body>
 </html>
