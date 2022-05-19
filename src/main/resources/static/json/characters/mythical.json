@@ -20,6 +20,13 @@
     "origin": "God's Gift",
     "image": "https://media.pitchfork.com/photos/5c7d4c1b4101df3df85c41e5/1:1/w_450%2Cc_limit/Dababy_BabyOnBaby.jpg",
       "ID": "4aac"
+    },
+    {
+      "name": "Andrew Carnegie",
+      "description": "Believed in the gospel of wealth and engineered vertical integration.",
+      "origin": "America",
+      "image": "https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY1ODIxNzY5MTc5OTk3Mjc3/andrew-carnegie-gettyimages-871449296.jpg",
+        "ID": "4aaad"
     }
   ]
 }

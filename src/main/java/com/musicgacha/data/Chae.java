@@ -42,7 +42,9 @@ public class Chae {
                 cock.add(roll);
             }
             this.database.put(x, cock);
+
         }
+
     }
     public Roll getRandom(String rarity) {
         ArrayList<Roll> lis = database.get(rarity);

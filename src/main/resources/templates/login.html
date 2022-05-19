@@ -1,44 +1,33 @@
 <!DOCTYPE HTML>
 <html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
-      layout:decorate="~{base/layout}" lang="en">
+      layout:decorate="~{base/noNavbar}" lang="en">
 
 <head><div layout:fragment="metadata" th:remove="tag"><div class="animation-region">
     <title>Login</title>
+    <link rel="stylesheet" th:href="@{/css/login.css}">
 </div></div>
 
 <body><div layout:fragment="content" th:remove="tag">
+    <form class="login-form" name="f" th:action="@{/login}" method="POST">
+        <h1>Login</h1>
+        <table style="padding-top:20px;">
+            <tr th:if="${param.error}" class="alert alert-error">
+                Invalid username and password.
+            </tr>
+            <tr th:if="${param.logout}" class="alert alert-success">
+                You have been logged out.
+            </tr>
+            <!-- 'email' is mapped to 'username' for Spring Security -->
+            <tr><th><label for="username">Email</label></th></tr>
+            <tr><td><input class="login-input" type="email" id='username' name="username" size="20" required></td></tr>
+            <tr><th><label for="password">Password</label></th></tr>
+            <tr><td><input class="login-input" type="password" id="password" name="password" size="20" required></td></tr>
+            <tr><th><input class="submit" type="submit" value="Submit"></th></tr>
+            <tr><th><a th:href="@{/database/personcreate}">Sign Up</a></th></tr>
+            <tr><td> </td></tr>
+            <tr><td><a href="/">Back to Home</a></td></tr>
 
-    <div class="container py-4">
-        <header class="pb-3 mb-4 border-bottom border-primary text-dark">
-            <span class="fs-4">Login Page</span>
-        </header>
-    </div>
-
-    <div class="container py-4 text-light bg-success">
-
-        <div class="container bg-secondary py-4">
-            <div class="p-5 mb-4 bg-light text-dark rounded-3">
-                <form name="f" th:action="@{/login}" method="POST">
-                    <table>
-                        <tr th:if="${param.error}" class="alert alert-error">
-                            Invalid username and password.
-                        </tr>
-                        <tr th:if="${param.logout}" class="alert alert-success">
-                            You have been logged out.
-                        </tr>
-                        <!-- 'email' is mapped to 'username' for Spring Security -->
-                        <tr><th><label for="username">Email</label></th></tr>
-                        <tr><td><input type="email" id='username' name="username" size="20" required></td></tr>
-                        <tr><th><label for="password">Password</label></th></tr>
-                        <tr><td><input type="password" id="password" name="password" size="20" required></td></tr>
-                        <tr><th><input type="submit" value="Submit"></th></tr>
-                        <tr><td><a th:href="@{/database/personcreate}">Sign Up</a></td></tr>
-
-                    </table>
-                </form>
-            </div>
-        </div>
-
-    </div>
+        </table>
+    </form>
 </div>
 </body>

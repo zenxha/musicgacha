@@ -1,23 +1,18 @@
 <!DOCTYPE HTML>
 <html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
-      layout:decorate="~{base/layout}" lang="en">
+      layout:decorate="~{base/noNavbar}" lang="en">
 
 <head><div layout:fragment="metadata" th:remove="tag"><div class="animation-region">
-    <title>Create   </title>
+    <title>Create</title>
+    <link rel="stylesheet" th:href="@{/css/login.css}">
 </div></div>
 
 <body><div layout:fragment="content" th:remove="tag">
-
         <div class="container">
-
             <div class="row justify-content-md-center">
-                <h2>Welcome, Enter the new Persons details</h2>
-            </div>
-
-            <div class="row justify-content-md-center" style="color:black;">
                 <div class="col8">
-                    <div class="jumbotron">
-                        <h3>Create Person</h3>
+                    <div class="login-form" style="width: 400px; margin: 50px auto">
+                        <h1>Create Person</h1>
                         <!-- ThymeLeaf allows person abject of the Class Person to be acted upon by the form
                              This is known as a “bean-backed form” or "form-backing bean".
                                 th:object - the backend form object (bean object)
@@ -35,27 +30,30 @@
                                 https://getbootstrap.com/docs/4.0/components/forms/#readonly-plain-text
                          -->
                         <form class="form-inline" action="#" th:action="@{/database/personcreate}" th:object="${person}" method="POST">
-                            <div class="form-group mb-2 mr-sm-2">
-                                <label for="email">Email:</label>
-                                <input type="email" th:field="*{email}" id="email">
+                        <table>
+                            <tr><td>
+                                <label for="email">Email</label>
+                                <input class="login-input" type="email" th:field="*{email}" id="email">
                                 <small th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</small>
-                            </div>
-                            <div class="form-group mb-2 mr-sm-2">
-                                <label for="password">Password:</label>
-                                <input type="password" th:field="*{password}" id="password">
+                            </td></tr>
+                            <tr><td>
+                                <label for="password">Password</label>
+                                <input class="login-input" type="password" th:field="*{password}" id="password">
                                 <small th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password Error</small>
-                            </div>
-                            <div class="input-group mb-2 mr-sm-2">
-                                <label for="name">Name:</label>
-                                <input type="text" th:field="*{name}" id="name">
+                            </td></tr>
+                            <tr><td>
+                                <label for="name">Name</label>
+                                <input class="login-input" type="text" th:field="*{name}" id="name">
                                 <small th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Error</small>
-                            </div>
-                            <div class="input-group mb-2 mr-sm-2">
-                                <label for="dob">Birth Date:</label>
-                                <input type="date" th:field="*{dob}" id="dob">
+                            </td></tr>
+                            <tr><td>
+                                <label for="dob">Birth Date</label>
+                                <input class="login-input" type="date" th:field="*{dob}" id="dob">
                                 <small th:if="${#fields.hasErrors('dob')}" th:errors="*{dob}">Birth Date Error</small>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Add</button>
+                            </td></tr>
+                            <tr><td><button type="submit" class="btn btn-primary">Add</button></td></tr>
+                            <tr><td><a href="/login">Back to Login</a></td></tr>
+                        </table>
                         </form>
                     </div>
                 </div>

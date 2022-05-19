@@ -49,6 +49,13 @@
       "origin": "Spy x Family",
       "image": "https://i.imgur.com/LCs7PVY.png",
       "ID": "0aag"
+    },
+    {
+      "name": "John F. Kennedy",
+      "description": "Sparked idealism of a new generation of Americans, and championed the US space program",
+      "origin": "American",
+      "image": "https://cdn.discordapp.com/attachments/593331093130838016/976873172974587974/unknown.png",
+      "ID": "0aah"
     }
 
   ]

@@ -15,16 +15,16 @@
         <div class="row">
             <div class="wrapper">
                 <div class="col-md-3" th:each="x : ${rarityList.value}">
-                    <div th:classappend="${x.getRarity()+'-border'}"class="card p-3 py-4 mt-5 mb-5" style="color: white;">
+                    <a th:href="@{'/characters/'+${x.getID()}}" style="text-decoration: none;"><div th:classappend="${x.getRarity()+'-border'}"class="card p-3 py-4 mt-5 mb-5" style="color: white;">
                         <img class="card-img" th:src="${x.getImage()}" alt="Avatar" >
                         <div>
-                            <a th:href="@{'/characters/'+${x.getID()}}"><h4 th:text="${x.getName()}"></h4></a>
+                            <h4 th:text="${x.getName()}"></h4>
                             <p th:class="${x.getRarity}" th:text="${x.getRarity()}" style="text-transform: uppercase;"></p>
                             <p th:text="${x.getDescription()}"></p>
                             <p th:text="${x.getOrigin()}"><b></b></p>
                             <p th:text="${'ID: '+ x.getID()}"></p>
                         </div>
-                    </div>
+                    </div></a>
                 </div>
             </div>
         </div>
