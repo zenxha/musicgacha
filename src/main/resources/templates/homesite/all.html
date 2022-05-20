@@ -9,7 +9,7 @@
 
 <body><div layout:fragment="content" th:remove="tag"><div class="animation-region">
 
-    <h1 style="margin: 25px 0 0 100px;">Possible Characters</h1>
+    <h1 style="margin: 25px 0 0 100px;">Possible Characters Sorted by Rarity</h1>
     <div class="container" th:each="rarityList : ${database}">
         <h1 th:text="${rarityList.key}" th:class="${rarityList.key}" style="text-transform: uppercase; position: absolute; margin: 50px 0 0 35px; font-size: 50px;"> </h1>
         <div class="row">

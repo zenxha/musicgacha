@@ -34,6 +34,14 @@
       "origin": "My Hero Academia",
       "image": "https://files.catbox.moe/xjzrbg.png",
       "ID": "3aae"
+    },
+
+    {
+      "name": "Sasuke Uchiha",
+      "description": "Has OP eyes",
+      "origin": "Naruto",
+      "image": "https://files.catbox.moe/6r7fzw.jpg",
+      "ID": "3aaf"
     }
   ]
 }

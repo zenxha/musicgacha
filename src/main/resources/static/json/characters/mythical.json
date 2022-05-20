@@ -9,9 +9,9 @@
     },
     {
     "name": "Sana Minatozaki",
-    "description":  "Scouted in a shopping mall in Japan",
+    "description":  "Scouted in Mall",
     "origin": "TWICE",
-    "image": "https://files.catbox.moe/roz2ek.jpg",
+    "image": "https://files.catbox.moe/pkof3g.jpg",
       "ID": "4aaab"
     },
     {
@@ -21,12 +21,22 @@
     "image": "https://media.pitchfork.com/photos/5c7d4c1b4101df3df85c41e5/1:1/w_450%2Cc_limit/Dababy_BabyOnBaby.jpg",
       "ID": "4aac"
     },
+
     {
       "name": "Andrew Carnegie",
-      "description": "Believed in the gospel of wealth and engineered vertical integration.",
+      "description": "Vertical integration.",
       "origin": "America",
-      "image": "https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY1ODIxNzY5MTc5OTk3Mjc3/andrew-carnegie-gettyimages-871449296.jpg",
+      "image": "https://files.catbox.moe/vvtg4m.jpg",
         "ID": "4aaad"
+    },
+
+    {
+      "name": "Jennie Kim",
+      "description": "New Zealander",
+      "origin": "Blackpink",
+      "image": "https://files.catbox.moe/8xfsv9.jpg",
+      "ID": "4aaae"
     }
+
   ]
 }
