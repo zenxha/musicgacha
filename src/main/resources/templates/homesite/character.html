@@ -16,7 +16,7 @@
             <h1 th:text="${character.getName()}" class="display-4" style="color:black"></h1>
             <p th:text="${character.getOrigin()}" class="lead" style="color:black"> </p>
             <img th:src="${character.getImage()}">
-            <p th:src="${character.getDescription()}"></p>
+            <p th:text="${character.getDescription()}"></p>
             <hr class="my-4">
            </div>
     </div>
