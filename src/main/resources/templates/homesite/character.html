@@ -16,20 +16,10 @@
             <h1 th:text="${character.getName()}" class="display-4" style="color:black"></h1>
             <p th:text="${character.getOrigin()}" class="lead" style="color:black"> </p>
             <img th:src="${character.getImage()}">
+            <p th:src="${character.getDescription()}"></p>
             <hr class="my-4">
-            <form th:action="@{/random}" method="GET" id="greetForm">
-                <div style="color:black">
-                    <p ><b>Test Rolls</b></p>
-                    <label for="rolls">Input amount of rolls</label>
-                    <input name="rolls" id="rolls">
-                </div>
-                <div>
-                    <button>Roll!</button>
-                </div>
-                <p style="color:black" th:text="'Outputted Rarities: ' + ${result}"></p>
-
-        </div>
-        </form>
+           </div>
+    </div>
 
     </div></div></body>
 </html>

@@ -12,10 +12,7 @@ import org.springframework.stereotype.Component;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 
 @Component
 public class Chae {
@@ -41,10 +38,16 @@ public class Chae {
                 Roll roll = new Roll((JSONObject)y, x );
                 cock.add(roll);
             }
+            Collections.shuffle(cock);
             this.database.put(x, cock);
 
         }
 
+    }
+    public void shuffleAll() {
+        for(ArrayList<Roll> x : database.values()) {
+            Collections.shuffle(x);
+        }
     }
     public Roll getRandom(String rarity) {
         ArrayList<Roll> lis = database.get(rarity);
@@ -53,6 +56,7 @@ public class Chae {
     }
 
     public Map queryAll() {
+        shuffleAll();
         return database;
     }
     public Roll getByID(String ID) {

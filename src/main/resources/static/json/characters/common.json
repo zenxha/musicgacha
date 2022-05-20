@@ -53,9 +53,16 @@
     {
       "name": "John F. Kennedy",
       "description": "Sparked idealism of a new generation of Americans, and championed the US space program",
-      "origin": "American",
+      "origin": "United States of America",
       "image": "https://cdn.discordapp.com/attachments/593331093130838016/976873172974587974/unknown.png",
       "ID": "0aah"
+    },
+    {
+      "name": "Amelia Watson",
+      "description": "Debuted as part of the first generation of Hololive EN Vtubers",
+      "origin": "Hololive",
+      "image": "https://files.catbox.moe/vbpx3h.jpg",
+      "ID": "0aai"
     }
 
   ]
