@@ -16,6 +16,41 @@
             <p style="font-size: 50px;"><strong>HOVER</strong> to View Information</p>
         </div>
 
+        <div style="font-size: 80px;">Time left = <span id="timer">60:00</span><span id="reset" title="Reset Timer"> &#8634;</span></div>
+
+        <script type="text/javascript">
+
+            var upgradeTime = 7200;
+            var seconds = upgradeTime;
+
+            function timer() {
+                var days = Math.floor(seconds / 24 / 60 / 60);
+                var hoursLeft = Math.floor((seconds) - (days * 86400));
+                var hours = Math.floor(hoursLeft / 3600);
+                var minutesLeft = Math.floor((hoursLeft) - (hours * 3600));
+                var minutes = Math.floor(minutesLeft / 60);
+                var remainingSeconds = seconds % 60;
+
+                function pad(n) {
+                    return (n < 10 ? "0" + n : n);
+                }
+                document.getElementById('timer').innerHTML = pad(minutes) + ":" + pad(remainingSeconds);
+                if (seconds == 0) {
+                    clearInterval(countdownTimer);
+                    document.getElementById('timer').innerHTML = "Completed";
+                    document.getElementById('reset').style.visibility = 'hidden';
+
+                } else {
+                    seconds--;
+                }
+            }
+            var countdownTimer = setInterval('timer()', 1000);
+
+            $("#reset").click(function() {
+                seconds = upgradeTime;
+            });
+        </script>
+
         </br>
         </br>
         </br>
@@ -37,7 +72,7 @@
         </div>
         </br>
         </br>
-        <button class="click" onClick="window.location.reload();">New Character</button>
+        <button class="click" onClick="window.location.reload();">ROLL</button>
 <!--
         <a th:href="@{/database/notes/{id}(id = ${person.id})}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Add to Inventory</a>
 -->
