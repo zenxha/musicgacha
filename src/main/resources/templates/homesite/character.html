@@ -6,19 +6,22 @@
 
 <head><div layout:fragment="metadata" th:remove="tag">
     <title th:text="${character.getName()}"></title>
+    <link rel="stylesheet" th:href="@{/css/cards.css}">
 </div></head>
 
 <body><div layout:fragment="content" th:remove="tag"><div class="animation-region">
 
     <!-- STUFF GOES HERE -->
     <div class="container">
-        <div class="jumbotron">
-            <h1 th:text="${character.getName()}" class="display-4" style="color:black"></h1>
-            <p th:text="${character.getOrigin()}" class="lead" style="color:black"> </p>
-            <img th:src="${character.getImage()}">
-            <p th:text="${character.getDescription()}"></p>
-            <hr class="my-4">
-           </div>
+        <div class="big-card" th:classappend="${character.getRarity()+'-border'}">
+            <img class="character-img" th:src="${character.getImage()}" >
+            <div>
+                <h1 th:text="${character.getName()}" class="display-4"></h1>
+                <h1 th:class="${character.getRarity}" th:text="${character.getRarity()}" style="text-transform: uppercase;"></h1>
+                <p th:text="${character.getDescription()}"></p>
+                <p th:text="${'Origin: '+ character.getOrigin()}" class="lead"></p>
+            </div>
+        </div>
     </div>
 
     </div></div></body>
