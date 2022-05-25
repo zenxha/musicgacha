@@ -3,81 +3,104 @@
       layout:decorate="~{base/layout}" lang="en">
 
 <head><div layout:fragment="metadata" th:remove="tag">
-    <title>How to Play</title>
-    <link rel="stylesheet" th:href="@{css/cards.css}">
-    <link rel="stylesheet" th:href="@{css/roll.css}">
+    <title>Play</title>
+    <link rel="stylesheet" th:href="@{/css/roll.css}">
+    <link rel="stylesheet" th:href="@{/css/cards.css}">
 </div></head>
+
 <body><div layout:fragment="content" th:remove="tag"><div class="animation-region">
-    <div class="container">
 
-        </br>
+<div class="timer-box">
+    <p class="open-title">open in...</p>
+    <p id="timer" class="timer">loading</p>
+</div>
 
-        <div class="slat" style="text-align: center; position:relative; right: 80px;">
-            <p style="font-size: 50px;"><strong>HOVER</strong> to View Information</p>
+
+
+<div class="birthday-gift">
+    <div class="gift">
+    <input id='click' type='checkbox'>
+    <label class='click' for='click'></label>
+         <div class="sparkles">
+        <div class="spark1"></div>
+        <div class="spark2"></div>
+        <div class="spark3"></div>
+        <div class="spark4"></div>
+        <div class="spark5"></div>
+        <div class="spark6"></div>
+      </div>
+      </div>
+  </div>
+
+<div id="myModal" class="modal">
+    <div th:classappend="${character.getRarity()+'-border'}"class="card p-3 py-4 mt-5 mb-5" style="color: white; width: 290px;">
+        <!-- <span class="close">&times;</span> -->
+        <img class="card-img" th:src="${character.getImage()}" alt="Avatar" style="height:250px; width:250px;">
+        <div>
+            <h4 th:text="${character.getName()}"></h4>
+            <p th:class="${character.getRarity}" th:text="${character.getRarity()}" style="text-transform: uppercase;"></p>
+            <p th:text="${character.getDescription()}"></p>
+            <p th:text="${'Origin: '+ character.getOrigin()}"></p>
+            <p th:text="${'ID: '+ character.getID()}"></p>
+            <a th:href="@{'/characters/'+${character.getID()}}">Visit Character Page</a>
         </div>
-
-        <div style="font-size: 80px;">Time left = <span id="timer">60:00</span><span id="reset" title="Reset Timer"> &#8634;</span></div>
-
-        <script type="text/javascript">
-
-            var upgradeTime = 7200;
-            var seconds = upgradeTime;
-
-            function timer() {
-                var days = Math.floor(seconds / 24 / 60 / 60);
-                var hoursLeft = Math.floor((seconds) - (days * 86400));
-                var hours = Math.floor(hoursLeft / 3600);
-                var minutesLeft = Math.floor((hoursLeft) - (hours * 3600));
-                var minutes = Math.floor(minutesLeft / 60);
-                var remainingSeconds = seconds % 60;
-
-                function pad(n) {
-                    return (n < 10 ? "0" + n : n);
-                }
-                document.getElementById('timer').innerHTML = pad(minutes) + ":" + pad(remainingSeconds);
-                if (seconds == 0) {
-                    clearInterval(countdownTimer);
-                    document.getElementById('timer').innerHTML = "Completed";
-                    document.getElementById('reset').style.visibility = 'hidden';
-
-                } else {
-                    seconds--;
-                }
-            }
-            var countdownTimer = setInterval('timer()', 1000);
-
-            $("#reset").click(function() {
-                seconds = upgradeTime;
-            });
-        </script>
-
-        </br>
-        </br>
-        </br>
-
-        <div class="flip-card" style="color: black;">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img th:src="${character.getImage()}" height="300" >
-                </div>
-                <div class="flip-card-back" th:classappend="${character.getRarity()+'b'}">
-                    <div class="container">
-                        <h3 th:text="${character.getName()}"><b></b></h3>
-                        <h4 th:text="${character.getRarity()}"></h4>
-                        <p th:text="${character.getDescription()}"></p>
-                        <p th:text="${character.getOrigin()}"><b></b></p>
-                    </div>
-            </div>
-            </div>
-        </div>
-        </br>
-        </br>
-        <button class="click" onClick="window.location.reload();">ROLL</button>
-<!--
-        <a th:href="@{/database/notes/{id}(id = ${person.id})}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Add to Inventory</a>
--->
     </div>
+</div>
+
+<script type="text/javascript">
+    var upgradeTime = 7200;
+    var seconds = upgradeTime;
+
+    function timer() {
+        var days = Math.floor(seconds / 24 / 60 / 60);
+        var hoursLeft = Math.floor((seconds) - (days * 86400));
+        var hours = Math.floor(hoursLeft / 3600);
+        var minutesLeft = Math.floor((hoursLeft) - (hours * 3600));
+        var minutes = Math.floor(minutesLeft / 60);
+        var remainingSeconds = seconds % 60;
+
+        function pad(n) {
+            return (n < 10 ? "0" + n : n);
+        }
+        document.getElementById('timer').innerHTML = pad(minutes) + ":" + pad(remainingSeconds);
+        if (seconds == 0) {
+            clearInterval(countdownTimer);
+            document.getElementById('timer').innerHTML = "Completed";
+            document.getElementById('reset').style.visibility = 'hidden';
+
+        } else {
+            seconds--;
+        }
+    }
 
 
-</div></div></body>
+    var countdownTimer = setInterval('timer()', 1000);
+
+    $("#reset").click(function() {
+        seconds = upgradeTime;
+    });
+
+
+    //modal
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("click");
+    var span = document.getElementsByClassName("close")[0];
+    
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    </script>
+
+<div></div></body>
 </html>
