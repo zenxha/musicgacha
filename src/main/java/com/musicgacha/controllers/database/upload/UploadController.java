@@ -64,8 +64,9 @@ public class UploadController {
         try {
             // Creating the directory to store file
             File dir = new File( filePath );
-            if (!dir.exists())
+            if (!dir.exists()) {
                 dir.mkdirs();
+            }
 
             // Create the file on server
             byte[] bytes = formFile.getBytes();

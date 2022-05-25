@@ -1,4 +1,4 @@
-package com.musicgacha.controllers.database.upload;
+package com.musicgacha;
 
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.GenericWebApplicationContext;
