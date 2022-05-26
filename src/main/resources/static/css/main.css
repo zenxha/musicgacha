@@ -201,7 +201,7 @@ body {
   width: 95%;
   margin: 15px 2.5% 15px 2.5%;
   border-radius: 20px;
-  z-index: 1000000;
+  z-index: 1;
 }
 
 .navtext {
