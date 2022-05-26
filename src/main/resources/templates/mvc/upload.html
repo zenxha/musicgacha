@@ -13,14 +13,14 @@
 <th:block layout:fragment="body" th:remove="tag">
     <div class="container bg-secondary py-4">
         <div class="p-5 mb-4 bg-light text-dark rounded-3">
-            <h2>Content Upload</h2>
+            <h2>Upload Own Gacha Character!</h2>
             <hr>
             <!--Notes input form, textarea supports multiple lines of input  -->
             <form id="upload" enctype="multipart/form-data" th:action="@{/mvc/uploader}" method = "POST">
                 <table class="table">
                     <thead>
                     <tr>
-                        <th><label for="filename">Upload a new file:</label></th>
+                        <th><label for="filename">Upload a new character:</label></th>
                     </tr>
                     </thead>
                     <tbody>
