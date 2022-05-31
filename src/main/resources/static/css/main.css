@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
 :root{
-    --accent:  rgba(40, 40, 40, 0.8);
-    --darkaccent: rgba(21, 21, 21, 0.8);
+    --accent:  rgb(40, 40, 40);
+    --darkaccent: rgba(21, 21, 21);
     --blueaccent: #1b2c5c
 }
 
@@ -201,7 +201,7 @@ body {
   width: 95%;
   margin: 15px 2.5% 15px 2.5%;
   border-radius: 20px;
-  z-index: 1000000;
+  z-index: 1;
 }
 
 .navtext {
