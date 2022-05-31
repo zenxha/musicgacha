@@ -33,7 +33,7 @@
   </div>
 
 <div id="myModal" class="modal">
-    <div th:classappend="${character.getRarity()+'-border'}"class="card p-3 py-4 mt-5 mb-5" style="color: white; width: 290px;">
+    <div th:classappend="${character.getRarity()+'-border'}"class="card p-3 py-4 mt-5 mb-5" style="color: white; width: 290px; margin: auto; z-index: 99999999;">
         <!-- <span class="close">&times;</span> -->
         <img class="card-img" th:src="${character.getImage()}" alt="Avatar" style="height:250px; width:250px;">
         <div>
