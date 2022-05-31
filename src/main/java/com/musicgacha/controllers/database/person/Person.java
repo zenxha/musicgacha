@@ -1,8 +1,6 @@
 package com.musicgacha.controllers.database.person;
 
 import com.musicgacha.controllers.database.role.Role;
-import com.musicgacha.controllers.database.role.Rollid;
-import com.musicgacha.data.Roll;
 import org.springframework.format.annotation.DateTimeFormat;
 import lombok.*;
 
@@ -45,8 +43,7 @@ public class Person {
 
     @NotEmpty
     private String password;
-    @ManyToMany(fetch = EAGER)
-    private Collection<Rollid> owned = new ArrayList<>();
+
     @ManyToMany(fetch = EAGER)
     private Collection<Role> roles = new ArrayList<>();
 
