@@ -1,4 +1,7 @@
-# musicgacha
+# Welcome To Musicgacha!!
+
+## Roll for your favorite characters!
+
 [Github page](https://zenxha.github.io/musicgacha/)
 <table>
   <tr>
