@@ -7,71 +7,64 @@
 <!-- <head> page additions -->
 <th:block layout:fragment="head" th:remove="tag">
     <title>Data Filters</title>
+    <link rel="stylesheet" th:href="@{/css/login.css}">
 </th:block>
 
 <!-- <body> -->
 <th:block layout:fragment="body" th:remove="tag">
-    <div class="container bg-secondary py-4">
-        <div class="p-5 mb-4 bg-light text-dark rounded-3">
-            <h2>Upload Own Gacha Character!</h2>
-            <h3>(YOU MUST BE LOGGED IN TO SEE UPLOADED PHOTOS)</h3>
-            <hr>
-            <!--Notes input form, textarea supports multiple lines of input  -->
-            <form id="upload" enctype="multipart/form-data" th:action="@{/mvc/uploader}" method = "POST">
-                <table class="table">
-                    <thead>
-                    <tr><th>
-                        <label for="filename">Upload a new character:</label>
-                    </th></tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td><input type="file" id="filename" name="filename" /></td>
-                    <tr><th>
-                        <label for="char">Character Name</label>
-                        <input type="text" name="char" id="char">
-                    </th></tr>
-                    <tr><th>
-                        <label for="descrip">Description</label>
-                        <input type="text" name="descrip" id="descrip">
-                    </th></tr>
-                    <tr><th>
-                        <label for="descrip">Origin</label>
-                        <input type="text" name="origin" id="origin">
-                    </th></tr>
-                    <tr><th>
-                        <label for="rarity">Rarity</label>
-                        <div class="select">
-                            <select name="rarity" id="rarity">
-                                <option value="Common">Common</option>
-                                <option value="Uncommon">Uncommon</option>
-                                <option value="Epic">Epic</option>
-                                <option value="Legendary">Legendary</option>
-                                <option value="Mythical">Mythical</option>
-                            </select>
-                            <span class="focus"></span>
-                        </div>
-                    </th></tr>
-                        <td><input type="submit" value="Upload" ></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </form>
-            <hr>
-            <!-- Add something to show what user has uploaded-->
-            <div class="table-responsive">
-                <table class="table">
-                    <tbody>
-                    <tr th:each="i : ${#numbers.sequence(files.size() - 1, 0, -1)}"
-                        th:with="file=${files[i]}">
-                        <td><image th:src="@{__${file.file}__}" width="150px"></image></td>
-                        <td><span th:text="${file.file}"></span></td>
-                        <td><span th:text="${file.type}"></span></td>
-                        <td><span th:text="${file.size}"></span></td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+    <div class="upload-form">
+        <h2>Upload Own Gacha Character!</h2>
+        <h3>(YOU MUST BE LOGGED IN TO SEE UPLOADED PHOTOS)</h3>
+        <!--Notes input form, textarea supports multiple lines of input  -->
+        <form id="upload" enctype="multipart/form-data" th:action="@{/mvc/uploader}" method = "POST">
+            <table class="table"> 
+                <tbody>
+                    <label for="filename">Upload a new character:</label>
+                <tr>
+                    <td><input type="file" id="filename" name="filename" /></td>
+                <tr><th>
+                    <label for="char">Character Name</label>
+                    <input type="text" name="char" id="char">
+                </th></tr>
+                <tr><th>
+                    <label for="descrip">Description</label>
+                    <input type="text" name="descrip" id="descrip">
+                </th></tr>
+                <tr><th>
+                    <label for="descrip">Origin</label>
+                    <input type="text" name="origin" id="origin">
+                </th></tr>
+                <tr><th>
+                    <label for="rarity">Rarity</label>
+                    <div class="select">
+                        <select name="rarity" id="rarity">
+                            <option value="Common">Common</option>
+                            <option value="Uncommon">Uncommon</option>
+                            <option value="Epic">Epic</option>
+                            <option value="Legendary">Legendary</option>
+                            <option value="Mythical">Mythical</option>
+                        </select>
+                        <span class="focus"></span>
+                    </div>
+                </th></tr>
+                    <td><input type="submit" value="Upload" ></td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+        <!-- Add something to show what user has uploaded-->
+        <div class="table-responsive">
+            <table class="table">
+                <tbody>
+                <tr th:each="i : ${#numbers.sequence(files.size() - 1, 0, -1)}"
+                    th:with="file=${files[i]}">
+                    <td><image th:src="@{__${file.file}__}" width="150px"></image></td>
+                    <td><span th:text="${file.file}"></span></td>
+                    <td><span th:text="${file.type}"></span></td>
+                    <td><span th:text="${file.size}"></span></td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </th:block>

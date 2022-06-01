@@ -25,3 +25,12 @@ label{
     border: 2px solid var(--accent);
     outline: none;
 }
+
+.upload-form{
+    background-color: var(--blueaccent);
+    color: white;
+    padding: 50px;
+    border-radius: 35px;
+    width: 90%;
+    margin: auto;
+}
