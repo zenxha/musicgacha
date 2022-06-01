@@ -1,5 +1,10 @@
 package com.musicgacha.controllers.database.upload;
 
+import com.musicgacha.data.Roll;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -8,12 +13,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.ui.Model;
+import org.springframework.web.context.annotation.RequestScope;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.Path;
@@ -48,7 +51,16 @@ public class UploadController {
 
     // uploader page: filesystem and database management of uploaded image
     @PostMapping("/mvc/uploader")
-    public String mvcUploader(@RequestParam("filename") MultipartFile formFile, Model modelMap)  {
+    public String mvcUploader(@RequestParam("filename") MultipartFile formFile,
+                              @RequestParam("char") String characterName,
+                              @RequestParam("descrip") String description,
+                              @RequestParam("rarity") String rarity,
+                              @RequestParam("origin") String origin,
+                              Model modelMap) throws IOException, ParseException {
+
+
+        List<Upload> files = repo.findAll();
+
         /* The static directory is loaded at startup. UploadING images or makING changes to any files or
          folders under the static folder will not reflect as ApplicationContext is already initialized. */
         String filePath = "uploads/";       // thus, uploads defined outside of static
@@ -86,7 +98,13 @@ public class UploadController {
 
             // JPA save
             repo.save(repoFile);
-
+            JSONParser parser = new JSONParser();
+            JSONArray arr;
+            Object obj = parser.parse(new FileReader("src/main/resources/static/json/characters/"+rarity+".json"));
+            JSONObject jsonObject = (JSONObject) obj;
+            arr = (JSONArray) jsonObject.get("array");
+            arr.add(new Roll(characterName, description, origin, "a"));
+            System.out.println(files);
         } catch (IOException e) {
             e.printStackTrace();        // app stays alive, errors go to run console, /var/log/syslog
         }

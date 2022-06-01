@@ -25,6 +25,12 @@ public class Roll {
         description = (String)r.get("description");
         ID = (String)r.get("ID");
     }
+    public Roll(String name, String description, String origin, String image ) {
+        this.name = name;
+        this.description = description;
+        this.origin = origin;
+        this.image = image;
+    }
     public String getImage() {
         return image;
     }

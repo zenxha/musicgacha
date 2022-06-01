@@ -50,7 +50,7 @@ public class PersonViewController {
         repository.save(person);
         repository.addRoleToPerson(person.getEmail(), "ROLE_STUDENT");
         // Redirect to next step
-        return "redirect:/database/person";
+        return "redirect:/";
     }
 
     @GetMapping("/database/personupdate/{id}")
