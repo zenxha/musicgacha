@@ -61,21 +61,6 @@
             </form>
             <hr>
             <!-- Add something to show what user has uploaded-->
-
-            <div>
-                <div class="col-md-3" th:each="i : ${#numbers.sequence(files.size() - 1, 0, -1)}"
-                     th:with="file=${files[i]}" style="scroll-snap-align: start;">
-                    <a style="text-decoration: none;"><div th:classappend="${'epic-border'}"class="card p-3 py-4 mt-5 mb-5" style="color: white;">
-                        <img class="card-img" th:src="@{__${file.file}__}" alt="Avatar" >
-                        <div>
-                            <h4 th:text="${'character name'}"></h4>
-                            <p th:class="${'epic'}" th:text="${'rarity '+file.type}" style="text-transform: uppercase;"></p>
-                            <p th:text="${'description'}"></p>
-                            <p th:text="${'a'}"></p>
-                        </div>
-                    </div></a>
-                </div>
-            </div>
             <div class="table-responsive">
                 <table class="table">
                     <tbody>
