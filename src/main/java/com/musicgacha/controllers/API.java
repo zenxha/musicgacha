@@ -18,10 +18,10 @@ public class API {
     public API() throws Exception {
     }
 
-    @GetMapping("/api/random?rarity={rarity}")
+    @GetMapping("/api/random/{rarity}")
     public ResponseEntity<Roll> character(@PathVariable("rarity") String rarity) throws IOException, ParseException {
         //String web_server = "http://localhost:8080/";
-        return new ResponseEntity<>(chae.getRandom("common"), HttpStatus.OK);
+        return new ResponseEntity<>(chae.getRandom(rarity), HttpStatus.OK);
     }
 
 
