@@ -10,10 +10,7 @@
 
 <body><div layout:fragment="content" th:remove="tag"><div class="animation-region">
 
-<div class="timer-box">
-    <p class="open-title">open in...</p>
-    <p id="timer" class="timer">loading</p>
-</div>
+
 
 
 
@@ -85,15 +82,15 @@
     var modal = document.getElementById("myModal");
     var btn = document.getElementById("click");
     var span = document.getElementsByClassName("close")[0];
-    
+
     btn.onclick = function() {
       modal.style.display = "block";
     }
-    
+
     span.onclick = function() {
       modal.style.display = "none";
     }
-    
+
     window.onclick = function(event) {
       if (event.target == modal) {
         modal.style.display = "none";
