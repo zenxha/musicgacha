@@ -19,7 +19,7 @@ public class Chae {
     private Map<String, ArrayList<Roll>> database = new LinkedHashMap<>();
     public Chae() throws Exception {
 
-        String[] rarities = {"common", "uncommon", "epic", "legendary", "mythical"};
+        String[] rarities = {"common", "uncommon", "epic", "legendary", "mythical", "transcendent"};
         for(String x : rarities) {
             ArrayList<Roll> cock = new ArrayList<>();
             JSONParser parser = new JSONParser();

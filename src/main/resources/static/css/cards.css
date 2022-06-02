@@ -9,6 +9,7 @@ html,body {
     border-radius: 25px;
     height: auto;
     margin-top: 80px;
+    min-width: 230px;
 }
 
 .big-card {
@@ -137,6 +138,16 @@ html,body {
     background-color: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
 }
 
+.transcendent {
+    background-image: linear-gradient(to bottom right, #ff0000 0%, #ab0000 25%, #890000 50%, #5d0000 75%, #380000 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.transcendentb {
+    background-color: linear-gradient(to bottom right, #ff0000 0%, #ab0000 25%, #890000 50%, #5d0000 75%, #380000 100%);
+}
+
 .common-border{
     border: solid 4px #e9c46a;
 }
@@ -156,6 +167,12 @@ html,body {
 .mythical-border{
     border: 5px solid transparent;
     border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+}
+
+.transcendent-border{
+    border: 5px solid transparent;
+    border-image: linear-gradient(to bottom right, #ff0000 0%, #ab0000 25%, #890000 50%, #5d0000 75%, #380000 100%);
     border-image-slice: 1;
 }
 

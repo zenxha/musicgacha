@@ -16,7 +16,7 @@
             <div class="wrapper" style="scroll-snap-type: x mandatory">
                 <div class="col-md-3" th:each="x : ${rarityList.value}" style="scroll-snap-align: start;">
                     <a th:href="@{'/characters/'+${x.getID()}}" style="text-decoration: none;"><div th:classappend="${x.getRarity()+'-border'}"class="card p-3 py-4 mt-5 mb-5" style="color: white;">
-                        <img class="card-img" th:src="${x.getImage()}" alt="Avatar" >
+                        <img class="card-img" th:src="${x.getImage()}" alt="Avatar">
                         <div>
                             <h4 th:text="${x.getName()}"></h4>
                             <p th:class="${x.getRarity}" th:text="${x.getRarity()}" style="text-transform: uppercase;"></p>
