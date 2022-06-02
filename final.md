@@ -13,7 +13,7 @@
 - Near full completion at the end, with msot of the progression cards being greenlit
 
 ## Sponsor Verification Message
-- Sponsor was suprised and satisfied with project, [video with reaction][(https://www.youtube.com/watch?v=jQt1ty-cvco)
+- Sponsor was suprised and satisfied with project, [video with reaction](https://www.youtube.com/watch?v=jQt1ty-cvco)
 - Previous interaction was included within new iteration:
 - ![Verified](https://files.catbox.moe/tby78o.png)
   - Included request for [Ayano Tateyama](https://github.com/zenxha/musicgacha/blob/c04cad9f55b3c2c0f28b8b7cbb8c55cc64c9ca3d/src/main/resources/static/json/characters/legendary.json#L22-L26)
