@@ -5,6 +5,7 @@ import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.parameters.P;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
@@ -14,14 +15,13 @@ public class API {
 //    private ScoreSqlRepository repository;
     @Autowired
     Chae chae = new Chae();
-
     public API() throws Exception {
     }
 
     @GetMapping("/api/random?rarity={rarity}")
-    public ResponseEntity<Roll> song(@PathVariable String rarity) throws IOException, ParseException {
+    public ResponseEntity<Roll> character(@PathVariable("rarity") String rarity) throws IOException, ParseException {
         //String web_server = "http://localhost:8080/";
-        return new ResponseEntity<Roll>(chae.getRandom(rarity), HttpStatus.OK);
+        return new ResponseEntity<>(chae.getRandom("common"), HttpStatus.OK);
     }
 
 
