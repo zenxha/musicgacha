@@ -7,7 +7,7 @@
 - [Recent commits](https://github.com/zenxha/musicgacha/commits/main) show active group contribution to the project
 
 ## Master Plan
-![13 Day Plan](https://cdn.discordapp.com/attachments/593331093130838016/981782159603937338/unknown.png))
+![13 Day Plan](https://cdn.discordapp.com/attachments/593331093130838016/981782159603937338/unknown.png)
 - Plans and progressions [breakdown](https://docs.google.com/drawings/d/1J8H0ygz2QkCI40XRQpPd7W-9kpfUwOEN2dKYtuCUNqI/edit)
 - Plan was activly updated, with progression expanding over the weeks
 - Near full completion at the end, with msot of the progression cards being greenlit
